@@ -14,27 +14,36 @@ $_SITE_TITLE = 'Module_4_Database'
 
     <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <header class="bg-gray-200 flex flex-col h-24 px-6 md:px-24 lg:px-26 xl:px-36 2xl:px-80">
+    <header class="bg-background text-gray-400 flex flex-col h-36 px-6 md:px-24 lg:px-26 xl:px-36 2xl:px-80">
         <nav class="flex flex-row justify-between my-auto">
             <!-- Left -->
-            <div class="flex flex-row gap-20 font-thin text-2xl">
-                <div>Home</div>
-                <div>About</div>
-                <div>Store</div>
-                <div>GitHub</div>
+            <div class="flex flex-row gap-16 text-lg my-auto">
+                <a href="#" class="text-gray-400 hover:text-content">Home</a>
+                <a href="#" class="text-gray-400 hover:text-content">About</a>
+                <a href="#" class="text-gray-400 hover:text-content">Store</a>
             </div>
             <!-- Right -->
-            <div class="flex flex-row gap-4 font-thin text-lg">
-                <div class="bg-blue-500 px-7 py-2 rounded-md">Login</div>
-                <div>Register</div>
+            <div class="flex flex-row gap-6 text-md">
+                <a href="#" class="py-2 hover:text-content">Login</a>
+                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Register</a>
+            </div>
+
+            <div class="hidden flex flex-row gap-6 text-md">
+                <a href="#" class="text-highlight py-2 my-auto hover:text-content">John Doe</a>
+                <img class="w-16 rounded-full border border-content" src="https://i.pravatar.cc/100">
             </div>
         </nav>
     </header>
 
-    <main class="bg-gray-400 flex flex-grow"></main>
+    <main class="bg-background flex flex-grow px-6 md:px-24 lg:px-26 xl:px-36 2xl:px-80">
+        <div class="bg-container rounded-lg w-full">s</div>
+    </main>
 
     <footer class="bg-gray-600 h-24"></footer>
 
