@@ -36,7 +36,26 @@ $_SITE_TITLE = 'Module_4_Database'
 
     <main class="bg-gray-400 flex flex-grow"></main>
 
-    <footer class="bg-gray-600 h-24"></footer>
+    <footer style="box-shadow:inset 0px 2px 10px #3B82F6;" class="bg-gray-600 rounded-xl h-24">
+
+        <div class="flex gap-10 justify-between mt-8 ml-20 mr-20">
+
+            <div class="">
+                <h2 class="text-2xl text-blue-500">Products</h2>
+                <p class="text-xs text-gray-200"><a href="#">Store</a></p>
+            </div>
+            <div class="">
+                <h2 class="text-2xl text-blue-500">About</h2>
+                <p class="text-xs text-gray-200"><a href="#">Account</a></p>
+            </div>
+            <div class="">
+                <h2 class="text-2xl text-blue-500">Contact</h2>
+            </div>
+            
+
+        </div>
+
+    </footer>
 
 </body>
 </html>
