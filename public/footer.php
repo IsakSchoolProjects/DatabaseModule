@@ -9,8 +9,8 @@
 
         <div class=" flex-1">
             <h2 class="text-xl text-blue-500 pb-2">Account</h2>
-            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Login</a></p>
-            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Register</a></p>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="login.php">Login</a></p>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="register.php">Register</a></p>
             <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Account</a></p>
         </div>
 

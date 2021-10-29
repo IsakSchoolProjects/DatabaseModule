@@ -9,7 +9,7 @@
         <!-- Right -->
         <div class="flex flex-row gap-6 text-md">
             <a href="login.php" class="py-2 hover:text-content">Login</a>
-            <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Register</a>
+            <a href="register.php" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Register</a>
         </div>
 
         <div class="hidden flex flex-row gap-6 text-md">
