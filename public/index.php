@@ -27,13 +27,15 @@ $_SITE_TITLE = 'Module_4_Database'
     ?>
 
     <main class="bg-background flex flex-grow px-6 md:px-24 lg:px-26 xl:px-36 2xl:px-80">
-        <div class="bg-container rounded-lg w-full">s</div>
+        <!-- <div class="bg-container rounded-lg w-full">s</div> -->
     </main>
 
     <!-- Carousel -->
     <div style="margin:auto;" class="landing-page">
         <div class="carousel">
-            <!-- <h1 class="text-4xl">Safety first</h1> -->
+            <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
+            <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
+            <a class="l1carouselLink text-md" href="#">Learn more ></a>
             <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">
         </div>
 
@@ -102,13 +104,15 @@ $_SITE_TITLE = 'Module_4_Database'
         function image(){
             let carousel = document.querySelector('.carousel');
             if(img == 1){
-                carousel.innerHTML = `<img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">`;
+                carousel.innerHTML = `<h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
+            <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p><a class="l1carouselLink text-md" href="#">Learn more ></a><img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">`;
                 return;
             }
             if(img == 2){
                 carousel.innerHTML = `<img class="rounded-md" src="../media/images/cars/l2.jpg" class="" alt="">`;
                 return;
             }
+
         }
         function next(){
             img++;

@@ -17,3 +17,29 @@
 .center{
     text-align: center;
 }
+
+.l1carouselText{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: #0E7490;
+}
+
+.l1carouselTextP{
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    color: #0E7490;
+}
+
+.l1carouselLink{
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 10%;
+    color: #0E7490;
+}
+
+.l1carouselLink:hover{
+    color: #333;
+}
