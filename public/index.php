@@ -46,25 +46,25 @@ $_SITE_TITLE = 'Module_4_Database'
     </main>
 
     <!-- Carousel -->
-    <!-- <div style="margin:auto;" class="landing-page">
-        <div class="carousel"> -->
+    <div style="margin:auto;" class="landing-page">
+        <div class="carousel">
             <!-- <h1 class="text-4xl">Safety first</h1> -->
-            <!-- <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">
+            <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">
         </div>
 
-        <div> -->
+        <div>
             <!-- Left -->
-            <!-- <div class="flex flex-row"><i onclick="prev()" class="fas fa-chevron-left fa-3x cursor-pointer"></i></div> -->
+            <div class="flex flex-row"><i onclick="prev()" class="fas fa-chevron-left fa-3x cursor-pointer"></i></div>
 
             <!-- Right -->
-            <!-- <div class="flex flex-row-reverse"><i onclick="next()" class="fas fa-chevron-right fa-3x cursor-pointer"></i></div>
+            <div class="flex flex-row-reverse"><i onclick="next()" class="fas fa-chevron-right fa-3x cursor-pointer"></i></div>
         </div>
     </div>
 
-    <br><br> -->
+    <br><br>
 
     <!-- Recently added -->
-    <!-- <h1 style="text-align: center;" class="text-5xl mb-20">Recently added</h1>
+    <h1 style="text-align: center;" class="text-5xl mb-20">Recently added</h1>
 
     <div style="max-height: 500px" class="flex flex-row gap-10 px-20 pb-20 my-auto">
         <div style="" class="flex-1 bg-gray-200 rounded-md w-12">
@@ -97,9 +97,9 @@ $_SITE_TITLE = 'Module_4_Database'
             </div>
             
         </div>
-    </div> -->
+    </div>
 
-    <!-- <br><br> -->
+    <br><br>
 
     <footer style="box-shadow:inset 0px 2px 10px 0px #3B82F6;" class="flex flex-row gap-20 bg-gray-600 rounded-t-xl py-7 pl-20 pr-20">
 
