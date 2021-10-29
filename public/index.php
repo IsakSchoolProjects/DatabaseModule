@@ -54,7 +54,7 @@ $_SITE_TITLE = 'Module_4_Database'
 
         <div>
             <!-- Left -->
-            <div class="flex flex-row"><i onclick="prev()" class="fas fa-chevron-left fa-3x cursor-pointer"></i></div>
+            <div class="flex flex-row"><i onclick="prev()" class=" fas fa-chevron-left fa-3x cursor-pointer"></i></div>
 
             <!-- Right -->
             <div class="flex flex-row-reverse"><i onclick="next()" class="fas fa-chevron-right fa-3x cursor-pointer"></i></div>
@@ -67,7 +67,7 @@ $_SITE_TITLE = 'Module_4_Database'
     <h1 style="text-align: center;" class="text-5xl mb-20">Recently added</h1>
 
     <div style="max-height: 500px" class="flex flex-row gap-10 px-20 pb-20 my-auto">
-        <div style="" class="flex-1 bg-gray-200 rounded-md w-12">
+        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
             <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
             <div class="p-3">
                 <h1 class="text-xl mb-5">Hello</h1>
@@ -77,7 +77,7 @@ $_SITE_TITLE = 'Module_4_Database'
             </div>
             
         </div>
-        <div style="" class="flex-1 bg-gray-200 rounded-md w-12">
+        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
             <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
             <div class="p-3">
                 <h1 class="text-xl mb-5">Hello</h1>
@@ -87,7 +87,7 @@ $_SITE_TITLE = 'Module_4_Database'
             </div>
             
         </div>
-        <div style="" class="flex-1 bg-gray-200 rounded-md w-12">
+        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
             <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
             <div class="p-3 mb-3">
                 <h1 class="text-xl mb-5">Hello</h1>
