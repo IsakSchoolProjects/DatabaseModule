@@ -1,0 +1,19 @@
+
+/* Prev/Next Carousel */
+.fa-chevron-left{
+    position: absolute;
+    top: 55%;
+    padding: 20px;
+    color: #D9D9E3;
+}
+
+.fa-chevron-right{
+    position: absolute;
+    top: 55%;
+    padding: 20px;
+    color: #D9D9E3;
+}
+
+.center{
+    text-align: center;
+}

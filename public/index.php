@@ -30,7 +30,7 @@ $_SITE_TITLE = 'Module_4_Database'
             </div>
             <!-- Right -->
             <div class="flex flex-row gap-6 text-md">
-                <a href="#" class="py-2 hover:text-content">Login</a>
+                <a href="login.php" class="py-2 hover:text-content">Login</a>
                 <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Register</a>
             </div>
 
@@ -45,30 +45,124 @@ $_SITE_TITLE = 'Module_4_Database'
         <div class="bg-container rounded-lg w-full">s</div>
     </main>
 
+    <!-- Carousel -->
+    <!-- <div style="margin:auto;" class="landing-page">
+        <div class="carousel"> -->
+            <!-- <h1 class="text-4xl">Safety first</h1> -->
+            <!-- <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">
+        </div>
+
+        <div> -->
+            <!-- Left -->
+            <!-- <div class="flex flex-row"><i onclick="prev()" class="fas fa-chevron-left fa-3x cursor-pointer"></i></div> -->
+
+            <!-- Right -->
+            <!-- <div class="flex flex-row-reverse"><i onclick="next()" class="fas fa-chevron-right fa-3x cursor-pointer"></i></div>
+        </div>
+    </div>
+
+    <br><br> -->
+
+    <!-- Recently added -->
+    <!-- <h1 style="text-align: center;" class="text-5xl mb-20">Recently added</h1>
+
+    <div style="max-height: 500px" class="flex flex-row gap-10 px-20 pb-20 my-auto">
+        <div style="" class="flex-1 bg-gray-200 rounded-md w-12">
+            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
+            <div class="p-3">
+                <h1 class="text-xl mb-5">Hello</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
+                <br>
+                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+            </div>
+            
+        </div>
+        <div style="" class="flex-1 bg-gray-200 rounded-md w-12">
+            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
+            <div class="p-3">
+                <h1 class="text-xl mb-5">Hello</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
+                <br>
+                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+            </div>
+            
+        </div>
+        <div style="" class="flex-1 bg-gray-200 rounded-md w-12">
+            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
+            <div class="p-3 mb-3">
+                <h1 class="text-xl mb-5">Hello</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
+                <br>
+                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+            </div>
+            
+        </div>
+    </div> -->
+
+    <!-- <br><br> -->
+
     <footer style="box-shadow:inset 0px 2px 10px 0px #3B82F6;" class="flex flex-row gap-20 bg-gray-600 rounded-t-xl py-7 pl-20 pr-20">
 
-            <div class=" mx-5 ml-10 flex-1">
-                <h2 class="text-xl text-blue-500 pb-2">Products</h2>
-                <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Store</a></p>
-                <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Cart</a></p>
-                <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Liked</a></p>
-            </div>
-            <div class=" flex-1">
-                <h2 class="text-xl text-blue-500 pb-2">Account</h2>
-                <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Login</a></p>
-                <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Register</a></p>
-                <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Account</a></p>
-            </div>
-            <div class=" flex-1">
-                <h2 class="text-xl text-blue-500 pb-2">About</h2>
-                <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">How it works</a></p>
-            </div>
-            <div class="flex-1">
-            <i style="color: #3B82F6;" class="fas fa-cars fa-4x"></i><!-- Logo -->
-            </div>
+        <div class=" mx-5 ml-10 flex-1">
+            <h2 class="text-xl text-blue-500 pb-2">Products</h2>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Store</a></p>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Cart</a></p>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Liked</a></p>
+        </div>
 
+        <div class=" flex-1">
+            <h2 class="text-xl text-blue-500 pb-2">Account</h2>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Login</a></p>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Register</a></p>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Account</a></p>
+        </div>
 
+        <div class=" flex-1">
+            <h2 class="text-xl text-blue-500 pb-2">About</h2>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">How it works</a></p>
+        </div>
+
+        <div class="flex-1">
+        <i style="color: #3B82F6;" class="fas fa-cars fa-4x"></i><!-- Logo -->
+        </div>
+            
     </footer>
+
+    <script>
+
+        // Carousel
+        let img = 1;
+        let max = 3;
+        let min = 0;
+        
+        function image(){
+            let carousel = document.querySelector('.carousel');
+            if(img == 1){
+                carousel.innerHTML = `<img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">`;
+                return;
+            }
+            if(img == 2){
+                carousel.innerHTML = `<img class="rounded-md" src="../media/images/cars/l2.jpg" class="" alt="">`;
+                return;
+            }
+        }
+        function next(){
+            img++;
+            if(img == max){
+                img = min+1;
+            }
+            image();
+        }
+
+        function prev(){
+            img--;
+            if(img == min){
+                img = max-1;
+            }
+            image();
+        }
+
+    </script>
 
 </body>
 </html>
