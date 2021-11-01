@@ -22,7 +22,7 @@ $_SITE_TITLE = 'Module_4_Database'
 
     <?php
     
-        include 'header.php';
+        include 'components/header.php';
     
     ?>
 
@@ -105,7 +105,7 @@ $_SITE_TITLE = 'Module_4_Database'
 
     <?php
     
-        include 'footer.php';
+        include 'components/footer.php';
     
     ?>
 
