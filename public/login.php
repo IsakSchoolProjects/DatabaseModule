@@ -23,7 +23,7 @@ $_SITE_TITLE = 'Module_4_Database'
     <!-- Header -->
     <?php
         
-        include 'header.php';
+        include 'components/header.php';
 
     ?>
 
@@ -43,7 +43,7 @@ $_SITE_TITLE = 'Module_4_Database'
     <!-- Footer -->
     <?php
     
-        include 'footer.php';
+        include 'components/footer.php';
 
     ?>
 
