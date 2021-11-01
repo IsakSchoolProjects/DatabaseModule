@@ -65,7 +65,7 @@ $_SITE_TITLE = 'Module_4_Database'
             
         </div>
         <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
+            <img src="../media/images/cars/l2.jpg" class="rounded-md" alt="">
             <div class="p-3">
                 <h1 class="text-xl mb-5">Hello</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
@@ -75,7 +75,7 @@ $_SITE_TITLE = 'Module_4_Database'
             
         </div>
         <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
+            <img src="../media/images/cars/l3.jpg" class="rounded-md" alt="">
             <div class="p-3 mb-3">
                 <h1 class="text-xl mb-5">Hello</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
@@ -86,7 +86,22 @@ $_SITE_TITLE = 'Module_4_Database'
         </div>
     </div>
 
-    <br><br>
+    <br><hr><br>
+
+    <div class="border-2 border-highlight w-6/12 m-auto rounded-md center mt-16">
+        <form class="p-12" action="">
+
+            <h1 class="text-4xl pb-10">Contact Us</h1><br>
+
+            <input class="mr-2 p-2 border-2 w-44" type="text" placeholder="name...">
+            <input class="ml-2 p-2 border-2 w-44" type="email" placeholder="email..."><br><br>
+
+            <textarea class="w-96 p-2 border-2" name="msg" id="" cols="30" rows="5" placeholder="message..."></textarea><br><br>
+
+            <a href="" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Send</a>
+
+        </form>
+    </div><br><br><br>
 
     <?php
     
@@ -98,7 +113,7 @@ $_SITE_TITLE = 'Module_4_Database'
 
         // Carousel
         let img = 1;
-        let max = 3;
+        let max = 4;
         let min = 0;
         
         function image(){
@@ -109,7 +124,13 @@ $_SITE_TITLE = 'Module_4_Database'
                 return;
             }
             if(img == 2){
-                carousel.innerHTML = `<img class="rounded-md" src="../media/images/cars/l2.jpg" class="" alt="">`;
+                carousel.innerHTML = `<h1 class="l2carouselText text-4xl font-black">Volvo S60</h1>
+            <p class="l2carouselTextP text-2xl font-black">"The car of the year"</p>
+            <a class="l2carouselLink text-md text-orange-50" href="#">Learn more ></a><img class="rounded-md" src="../media/images/cars/l2.jpg" class="" alt="">`;
+                return;
+            }
+            if(img == 3){
+                carousel.innerHTML = `<img class="rounded-md" src="../media/images/cars/l3.jpg" class="" alt="">`;
                 return;
             }
 
