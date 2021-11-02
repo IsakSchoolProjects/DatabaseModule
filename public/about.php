@@ -22,7 +22,7 @@ $_SITE_TITLE = 'Module_4_Database'
 
     <?php
     
-        include 'header.php';
+        include './components/header.php';
     
     ?>
 
@@ -114,7 +114,7 @@ By catching the interest of the user we will have a landing page with informatio
 
     <?php
         
-        include 'footer.php';
+        include './components/footer.php';
 
     ?>
 
