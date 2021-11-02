@@ -89,14 +89,16 @@ $_SITE_TITLE = 'Module_4_Database'
     <br><hr><br>
 
     <div class="border-2 border-highlight w-6/12 m-auto rounded-md center mt-16">
+
+    <a id="contact_form_index"></a>
         <form class="p-12" action="">
 
             <h1 class="text-4xl pb-10">Contact Us</h1><br>
 
-            <input class="mr-4 p-2 border-2 w-44" minlenth="1" maxlength="64" type="text" placeholder="name...">
-            <input class="ml-2 p-2 border-2 w-44" minlength="1" maxlength="64" type="email" placeholder="email..."><br><br>
+            <input class="mr-4 p-2 border-2 w-44" minlenth="2" maxlength="64" required type="text" placeholder="name...">
+            <input class="ml-2 p-2 border-2 w-44" minlength="1" maxlength="64" required type="email" placeholder="email..."><br><br>
 
-            <textarea onkeyup="textareaKeyDown()" onkeydown="textareaKeyDown()" id="textarea" class="w-96 p-2 border-2" minlenth="10" maxlength="2064" name="msg" id="" cols="30" rows="5" placeholder="message..."></textarea>
+            <textarea onkeyup="textareaKeyDown()" onkeydown="textareaKeyDown()" required id="textarea" class="w-96 p-2 border-2" minlenth="10" maxlength="2064" name="msg" id="" cols="30" rows="5" placeholder="message..."></textarea>
             <br><span class="q">0</span>
             <span>/2064</span><br><br>
 

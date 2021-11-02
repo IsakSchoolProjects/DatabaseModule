@@ -17,6 +17,7 @@
         <div class=" flex-1">
             <h2 class="text-xl text-blue-500 pb-2">About</h2>
             <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">How it works</a></p>
+            <p class="text-xs text-gray-200 hover:text-blue-500"><a href="index.php/#contact_form_index">Contact us (Fungerar inte korrekt)</a></p>
         </div>
 
         <div class="flex-1">
