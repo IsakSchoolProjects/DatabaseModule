@@ -93,13 +93,14 @@ $_SITE_TITLE = 'Module_4_Database'
 
             <h1 class="text-4xl pb-10">Contact Us</h1><br>
 
-            <input class="mr-4 p-2 border-2 w-44" maxlength="64" max type="text" placeholder="name...">
-            <input class="ml-2 p-2 border-2 w-44" maxlength="64" type="email" placeholder="email..."><br><br>
+            <input class="mr-4 p-2 border-2 w-44" minlenth="1" maxlength="64" type="text" placeholder="name...">
+            <input class="ml-2 p-2 border-2 w-44" minlength="1" maxlength="64" type="email" placeholder="email..."><br><br>
 
-            <textarea onkeydown="textareaKeyDown()" id="textarea" class="w-96 p-2 border-2" maxlength="2064" name="msg" id="" cols="30" rows="5" placeholder="message..."></textarea>
-            <p class="q">0</p><br><br>
+            <textarea onkeyup="textareaKeyDown()" onkeydown="textareaKeyDown()" id="textarea" class="w-96 p-2 border-2" minlenth="10" maxlength="2064" name="msg" id="" cols="30" rows="5" placeholder="message..."></textarea>
+            <br><span class="q">0</span>
+            <span>/2064</span><br><br>
 
-            <a href="" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Send</a>
+            <input href="" type="submit" value="Send" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600"></input>
 
         </form>
     </div><br><br><br>
