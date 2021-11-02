@@ -65,7 +65,8 @@ $_SITE_TITLE = 'Module_4_Database'
         <div style="width: 400px;" class="mr-8 bg-gray-100 p-10">
             <h1 class="text-4xl mb-4">Project</h1>
             <h1 class="text-2xl pl-4 pt-2">Idea</h1>
-            <p class="pl-4">Kort bakgrund kring projektet... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, saepe?</p>
+            <p class="pl-4">The main idea of our project is to create an application that sells cars, where the user not only can put cars in the cart but also like and save their favorite products if they have an account.
+            To catch the interest of the user we will have a landing page with information about how it all works and show some interesting pictures of the cars.</p>
 
             <h1 class="text-2xl pl-4 pt-6">Product</h1>
             <p class="pl-4">En kort beskrivning om produkten som byggs... Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, explicabo!</p>    
@@ -80,13 +81,6 @@ $_SITE_TITLE = 'Module_4_Database'
             <p class="pl-4">Kort bakgrund kring projektet... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, saepe?</p>
         </div>
 
-        <!-- We are a group of three, with an assignment to create an application with a database. Our idea is to create an application that sells cars.
-
-Idea:
-The main idea of our project is to create an application that sells cars, where the user not only can put cars in the cart but also like and save their favorite products if they have an account.
-
-By catching the interest of the user we will have a landing page with information about how it all works.  -->
-
     </div>
 
 
@@ -94,16 +88,17 @@ By catching the interest of the user we will have a landing page with informatio
 
     <div class="flex flex-row mx-auto gap-14">
         <div class="bg-gray-100 p-8 w-56">
+            <h1 class="text-2xl text-blue-500 mb-4">Links</h1>
+
+            <p class="hover:text-blue-500"><a target="_blank" href="https://github.com/isakjensen/Module_4_Database.git">Github</a></p>
+            <p class="hover:text-blue-500"><a target="_blank" href="#">SQL</a></p>
+            
+        </div>
+        <div class="bg-gray-100 p-8 w-56">
             <h1 class="text-2xl text-blue-500 mb-4">Tools</h1>
 
             <p class="hover:text-blue-500"><a target="_blank" href="https://tailwindcss.com/">Tailwind</a></p>
             <p class="hover:text-blue-500"><a target="_blank" href="https://fontawesome.com/">Font Awesome</a></p>
-        </div>
-        <div class="bg-gray-100 p-8 w-56">
-            <h1 class="text-2xl text-blue-500 mb-4">Links</h1>
-
-            <p class="hover:text-blue-500"><a target="_blank" href="#">Github</a></p>
-            <p class="hover:text-blue-500"><a target="_blank" href="#">SQL</a></p>
         </div>
         <div class="bg-gray-100 p-8 w-56 mb-4">
             <h1 class="text-2xl text-blue-500">Hmm..</h1>
