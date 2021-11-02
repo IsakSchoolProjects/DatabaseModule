@@ -93,10 +93,11 @@ $_SITE_TITLE = 'Module_4_Database'
 
             <h1 class="text-4xl pb-10">Contact Us</h1><br>
 
-            <input class="mr-2 p-2 border-2 w-44" type="text" placeholder="name...">
-            <input class="ml-2 p-2 border-2 w-44" type="email" placeholder="email..."><br><br>
+            <input class="mr-4 p-2 border-2 w-44" maxlength="64" max type="text" placeholder="name...">
+            <input class="ml-2 p-2 border-2 w-44" maxlength="64" type="email" placeholder="email..."><br><br>
 
-            <textarea class="w-96 p-2 border-2" name="msg" id="" cols="30" rows="5" placeholder="message..."></textarea><br><br>
+            <textarea onkeydown="textareaKeyDown()" id="textarea" class="w-96 p-2 border-2" maxlength="2064" name="msg" id="" cols="30" rows="5" placeholder="message..."></textarea>
+            <p class="q">0</p><br><br>
 
             <a href="" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Send</a>
 
@@ -110,6 +111,14 @@ $_SITE_TITLE = 'Module_4_Database'
     ?>
 
     <script>
+
+        // Textarea Counter
+        let textarea = document.querySelector('#textarea');
+        let qLetters = document.querySelector('.q');
+
+        function textareaKeyDown(){
+            qLetters.innerHTML = textarea.value.length;
+        }
 
         // Carousel
         let img = 1;
@@ -150,6 +159,8 @@ $_SITE_TITLE = 'Module_4_Database'
             }
             image();
         }
+
+
 
     </script>
 

@@ -3,13 +3,8 @@
         <!-- Left -->
         <div class="flex flex-row gap-16 text-lg my-auto">
             <a href="index.php" class="text-gray-400 hover:text-content">Home</a>
-<<<<<<< HEAD
-            <a href="#" class="text-gray-400 hover:text-content">About</a>
-            <a href="store.php" class="text-gray-400 hover:text-content">Store</a>
-=======
             <a href="about.php" class="text-gray-400 hover:text-content">About</a>
             <a href="#" class="text-gray-400 hover:text-content">Store</a>
->>>>>>> 65f977cdac42ef792d309613b06d551094cad799
         </div>
         <!-- Right -->
         <div class="flex flex-row gap-6 text-md">
