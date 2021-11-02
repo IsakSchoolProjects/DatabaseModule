@@ -4,7 +4,7 @@
         <div class="flex flex-row gap-16 text-lg my-auto">
             <a href="index.php" class="text-gray-400 hover:text-content">Home</a>
             <a href="#" class="text-gray-400 hover:text-content">About</a>
-            <a href="#" class="text-gray-400 hover:text-content">Store</a>
+            <a href="store.php" class="text-gray-400 hover:text-content">Store</a>
         </div>
         <!-- Right -->
         <div class="flex flex-row gap-6 text-md">
