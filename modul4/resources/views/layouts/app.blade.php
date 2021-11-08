@@ -8,13 +8,19 @@
 
     <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/tailwind.css')}}">
 
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
 </head>
 <body class="min-h-screen flex flex-col">
 
+    @include('./inc/header')
+
     @yield('content')
+
+    @include('./inc/footer')
 
 </body>
 </html>

@@ -6,6 +6,7 @@ $_SITE_TITLE = 'Module_4_Database'
 
 @extends('layouts/app')
 
+
 @section('content')
 
 

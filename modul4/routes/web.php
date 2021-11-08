@@ -18,3 +18,7 @@ use App\Http\Controllers\PagesController;
 //     return view('welcome');
 // });
 Route::get('/', [PagesController::class, 'index']);
+Route::get('/about', [PagesController::class, 'about']);
+Route::get('/store', [PagesController::class, 'store']);
+Route::get('/login', [PagesController::class, 'login']);
+Route::get('/register', [PagesController::class, 'register']);

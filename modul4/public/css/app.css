@@ -1,0 +1,85 @@
+
+/* Prev/Next Carousel */
+.fa-chevron-left{
+    position: absolute;
+    top: 55%;
+    padding: 20px;
+    color: #D9D9E3;
+}
+
+/* img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
+/* #1B1A1F
+#25262B
+#D9D9E3
+#3DB2FF */
+
+.fa-chevron-right{
+    position: absolute;
+    top: 55%;
+    padding: 20px;
+    color: #D9D9E3;
+}
+
+.center{
+    text-align: center;
+}
+
+.l1carouselText{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: #0E7490;
+}
+
+.l1carouselTextP{
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    color: #0E7490;
+}
+
+.l1carouselLink{
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    left: 10%;
+    color: #0E7490;
+}
+
+.l1carouselLink:hover{
+    color: #333;
+}
+
+.l2carouselText{
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    padding: 0 20px;
+    background-color: #FFF7ED;
+    color: #333;
+}
+
+.l2carouselTextP{
+    position: absolute;
+    top: 42%;
+    right: 10%;
+    padding: 0 20px;
+    background-color: #FFF7ED;
+    color: #333;
+}
+
+.l2carouselLink{
+    position: absolute;
+    text-transform: uppercase;
+    top: 50%;
+    right: 10%;
+    color: #333;
+}
+
+.l2carouselLink:hover{
+    filter: brightness(-90%);
+}
