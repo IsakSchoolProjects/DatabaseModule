@@ -4,27 +4,11 @@ $_SITE_TITLE = 'Module_4_Database'
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $_SITE_TITLE ?></title>
+@extends('layouts/app')
 
-    <link rel="stylesheet" href="./css/tailwind.css">
-    <link rel="stylesheet" href="./css/style.css">
+@section('content')
 
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta2/css/all.css">
-</head>
-<body class="min-h-screen flex flex-col">
 
-    <?php
-    
-        include 'components/header.php';
-    
-    ?>
 
     <main class="bg-background flex flex-grow px-6 md:px-24 lg:px-26 xl:px-36 2xl:px-80">
         <!-- <div class="bg-container rounded-lg w-full">s</div> -->
@@ -107,11 +91,7 @@ $_SITE_TITLE = 'Module_4_Database'
         </form>
     </div><br><br><br>
 
-    <?php
-    
-        include 'components/footer.php';
-    
-    ?>
+
 
     <script>
 
@@ -167,5 +147,4 @@ $_SITE_TITLE = 'Module_4_Database'
 
     </script>
 
-</body>
-</html>
+@endsection
