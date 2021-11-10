@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\ProductsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,4 @@ Route::get('/about', [PagesController::class, 'about']);
 Route::get('/store', [PagesController::class, 'store']);
 Route::get('/login', [PagesController::class, 'login']);
 Route::get('/register', [PagesController::class, 'register']);
+Route::get('/list', [ProductsController::class, 'list']);

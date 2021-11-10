@@ -71,14 +71,14 @@ $_SITE_TITLE = 'Module_4_Database'
 
 <div class="flex flex-row mx-auto gap-14">
     <div class="filter drop-shadow bg-gray-100 p-8 w-56 rounded-lg">
-        <h1 class="text-2xl text-blue-500 mb-4 border-b border-gray-300">Tools</h1>
+        <h1 class="text-2xl text-blue-500 mb-4 border-b border-gray-300">Links</h1>
 
         <p class="hover:text-blue-500"><a target="_blank" href="https://github.com/isakjensen/Module_4_Database.git">Github</a></p>
         <p class="hover:text-blue-500"><a target="_blank" href="#">SQL</a></p>
         
     </div>
     <div class="filter drop-shadow bg-gray-100 p-8 w-56 rounded-lg">
-        <h1 class="text-2xl text-blue-500 mb-4 border-b border-gray-300">Links</h1>
+        <h1 class="text-2xl text-blue-500 mb-4 border-b border-gray-300">Tools</h1>
 
         <p class="hover:text-blue-500"><a target="_blank" href="https://tailwindcss.com/">Tailwind</a></p>
         <p class="hover:text-blue-500"><a target="_blank" href="https://fontawesome.com/">Font Awesome</a></p>
