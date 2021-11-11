@@ -18,9 +18,14 @@ $_SITE_TITLE = 'Module_4_Database'
     <!-- Carousel -->
     <div style="margin:auto;" class="landing-page">
         <div class="carousel">
-            <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
-            <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
-            <a class="l1carouselLink text-md" href="#">Learn more ></a>
+            <div class="flex flex-row">
+                <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
+                {{-- <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1> --}}
+                <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
+                {{-- <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p> --}}
+                <a class="l1carouselLink text-md" href="#">Learn more ></a>
+                {{-- <a class="l1carouselLink text-md" href="#">Learn more ></a> --}}
+            </div>
             <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">
         </div>
 
@@ -73,23 +78,35 @@ $_SITE_TITLE = 'Module_4_Database'
 
     <br><hr><br>
 
+    {{-- Contact --}}
+
     <div class="border-2 border-highlight w-6/12 m-auto rounded-md center mt-16">
 
     <a id="contact_form_index"></a>
-        <form class="p-12" action="">
+
+    {{-- composer require laravelcollective/html --}}
+
+        {{-- <form class="p-12" action=""> --}}
+        {{Form::open(array('action' => 'App\Http\Controllers\ProductsController@contact', 'method' => 'get', 'class' => 'p-12'))}}
 
             <h1 class="text-4xl pb-10">Contact Us</h1><br>
 
-            <input class="mr-4 p-2 border-2 w-44" minlenth="2" maxlength="64" required type="text" placeholder="name...">
-            <input class="ml-2 p-2 border-2 w-44" minlength="1" maxlength="64" required type="email" placeholder="email..."><br><br>
+            {{-- <input class="mr-4 p-2 border-2 w-44" minlenth="2" maxlength="64" required type="text" placeholder="name..."> --}}
+            {{Form::text('name', '', ['class' => 'mr-4 p-2 border-2 w-44', 'minlength' => '2', 'maxlength' => '64', 'type' => 'text', 'placeholder' => 'name...'])}}
+            {{Form::text('email', '', ['class' => 'ml-2 p-2 border-2 w-44', 'minlength' => '1', 'maxlength' => '64', 'type' => 'email', 'placeholder' => 'email...'])}}
+            {{-- <input class="ml-2 p-2 border-2 w-44" minlength="1" maxlength="64" required type="email" placeholder="email...">--}}
+            <br><br> 
 
-            <textarea onkeyup="textareaKeyDown()" onkeydown="textareaKeyDown()" required id="textarea" class="w-96 p-2 border-2" minlenth="10" maxlength="2064" name="msg" id="" cols="30" rows="5" placeholder="message..."></textarea>
+            {{Form::textarea('message', '', ['onkeyup' => 'textareaKeyDown()', 'onkeydown' => 'textareaKeyDown()', 'required' => '', 'id' => 'textarea', 'class' => 'w-96 p-2 border-2', 'minlength' => '10', 'maxlength' => '2064', 'name' => 'message', 'cols' => '30', 'rows' => '5', 'placeholder' => 'message...'])}}
+            {{-- <textarea onkeyup="textareaKeyDown()" onkeydown="textareaKeyDown()" required id="textarea" class="w-96 p-2 border-2" minlength="10" maxlength="2064" name="msg" cols="30" rows="5" placeholder="message..."></textarea> --}}
             <br><span class="q">0</span>
             <span>/2064</span><br><br>
 
-            <input href="" type="submit" value="Send" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600"></input>
+            {{Form::submit('Send', ['type' => 'submit', 'class' => 'bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600'])}}
+            {{-- <input href="" type="submit" value="Send" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600"> --}}
 
-        </form>
+        {{ Form::close() }}
+        {{-- </form> --}}
     </div><br><br><br>
 
 
@@ -112,18 +129,37 @@ $_SITE_TITLE = 'Module_4_Database'
         function image(){
             let carousel = document.querySelector('.carousel');
             if(img == 1){
-                carousel.innerHTML = `<h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
-            <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p><a class="l1carouselLink text-md" href="#">Learn more ></a><img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">`;
+                carousel.innerHTML = `<div class="flex flex-row">
+                <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
+                <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
+                <a class="l1carouselLink text-md" href="#">Learn more ></a>
+                </div>
+                <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">`;
+
+                document.querySelector('.fa-chevron-right').style.color = '#BFDBFE';
+                document.querySelector('.fa-chevron-left').style.color = '#BFDBFE';
+
                 return;
             }
             if(img == 2){
-                carousel.innerHTML = `<h1 class="l2carouselText text-4xl font-black">Volvo S60</h1>
-            <p class="l2carouselTextP text-2xl font-black">"The car of the year"</p>
-            <a class="l2carouselLink text-md text-orange-50" href="#">Learn more ></a><img class="rounded-md" src="../media/images/cars/l2.jpg" class="" alt="">`;
+                carousel.innerHTML = `<div class="flex flex-row-reverse">
+                <h1 class="l2carouselText text-4xl font-black text-cyan-700">Volvo S60</h1>
+                <p class="l2carouselTextP text-2xl font-black text-cyan-700">The car of the year</p>
+                <a class="l2carouselLink text-md text-orange-50" href="#">Learn more ></a>
+                </div>
+                <img class="rounded-md" src="../media/images/cars/l2.jpg" class="" alt="">`;
+
+                document.querySelector('.fa-chevron-right').style.color = '#FEE2E2';
+                document.querySelector('.fa-chevron-left').style.color = '#FEE2E2';
+
                 return;
             }
             if(img == 3){
                 carousel.innerHTML = `<img class="rounded-md" src="../media/images/cars/l3.jpg" class="" alt="">`;
+
+                document.querySelector('.fa-chevron-right').style.color = '#71717A';
+                document.querySelector('.fa-chevron-left').style.color = '#71717A';
+
                 return;
             }
 
@@ -143,8 +179,6 @@ $_SITE_TITLE = 'Module_4_Database'
             }
             image();
         }
-
-
 
     </script>
 
