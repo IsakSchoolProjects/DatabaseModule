@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\DB;
 class ProductsController extends Controller
 {
     function list(){
-        return DB::table('products')->get();
+        $res = DB::table('products')->get();
+
+        return view('pages.list')->with('res', $res);
     }
 }
