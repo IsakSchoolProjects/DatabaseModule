@@ -10,7 +10,7 @@ use DB;
 
 class ProductsController extends Controller
 {
-    public function contact(Request $request){
+        public function contact(Request $request){
 
         $name = $request->input('name');
         $email = $request->input('email'); 
@@ -41,4 +41,11 @@ class ProductsController extends Controller
         return view('pages.index');
     }
 
+    function list(){
+        $res = DB::table('products')->get();
+
+        return view('pages.list')->with('res', $res);
+    }
+
 }
+    
