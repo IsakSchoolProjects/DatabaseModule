@@ -23,4 +23,5 @@ Route::get('/about', [PagesController::class, 'about']);
 Route::get('/store', [PagesController::class, 'store']);
 Route::get('/login', [PagesController::class, 'login']);
 Route::get('/register', [PagesController::class, 'register']);
+Route::get('/cart', [PagesController::class, 'cart']);
 Route::get('/list', [ProductsController::class, 'list']);

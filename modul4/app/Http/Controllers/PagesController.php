@@ -26,4 +26,8 @@ class PagesController extends Controller
     public function register(){
         return view('pages.register');
     }
+
+    public function cart() {
+        return view('pages.cart');
+    }
 }
