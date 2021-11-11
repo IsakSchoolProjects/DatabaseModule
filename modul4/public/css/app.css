@@ -1,5 +1,4 @@
 
-
 /* Prev/Next Carousel */
 .fa-chevron-left{
     position: absolute;
@@ -84,3 +83,4 @@
 .l2carouselLink:hover{
     filter: brightness(-90%);
 }
+
