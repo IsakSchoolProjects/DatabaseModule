@@ -29,3 +29,5 @@ Route::get('/cart', [ProductsController::class, 'showCartItems']);
 Route::get('/remove_cart_item/{cart_item}', [CartController::class, 'remove_cart_item']);
 Route::get('/remove_all_cart_items', [CartController::class, 'remove_all_cart_items']);
 
+Route::get('/list', [ProductsController::class, 'list']);
+Route::get('/contact', [ProductsController::class, 'contact']);

@@ -2,9 +2,9 @@
 /* Prev/Next Carousel */
 .fa-chevron-left{
     position: absolute;
-    top: 55%;
+    top: 350px;
     padding: 20px;
-    color: #D9D9E3;
+    color: #BFDBFE;
 }
 
 /* img{
@@ -19,9 +19,9 @@
 
 .fa-chevron-right{
     position: absolute;
-    top: 55%;
+    top: 350px;
     padding: 20px;
-    color: #D9D9E3;
+    color: #BFDBFE;
 }
 
 .center{
@@ -30,24 +30,23 @@
 
 .l1carouselText{
     position: absolute;
-    top: 35%;
-    left: 10%;
+    top: 200px;
     color: #0E7490;
+    padding-left: 50px;
 }
 
 .l1carouselTextP{
     position: absolute;
-    top: 42%;
-    left: 10%;
+    top: 250px;
     color: #0E7490;
+    padding-left: 50px;
 }
 
 .l1carouselLink{
     position: absolute;
-    text-transform: uppercase;
-    top: 50%;
-    left: 10%;
+    top: 300px;
     color: #0E7490;
+    padding-left: 50px;
 }
 
 .l1carouselLink:hover{
@@ -56,17 +55,17 @@
 
 .l2carouselText{
     position: absolute;
-    top: 35%;
-    right: 10%;
-    padding: 0 20px;
+    top: 200px;
+    margin-right: 50px;
+    padding: 0 10px;
     background-color: #FFF7ED;
     color: #333;
 }
 
 .l2carouselTextP{
     position: absolute;
-    top: 42%;
-    right: 10%;
+    top: 250px;
+    margin-right: 50px;
     padding: 0 20px;
     background-color: #FFF7ED;
     color: #333;
@@ -75,8 +74,9 @@
 .l2carouselLink{
     position: absolute;
     text-transform: uppercase;
-    top: 50%;
-    right: 10%;
+    top: 300px;
+    margin-right: 50px;
+    padding: 0 20px;
     color: #333;
 }
 
