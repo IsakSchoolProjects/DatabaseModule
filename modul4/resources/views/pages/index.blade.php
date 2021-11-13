@@ -43,8 +43,41 @@ $_SITE_TITLE = 'Module_4_Database'
     <!-- Recently added -->
     <h1 style="text-align: center;" class="text-5xl mb-20">Recently added</h1>
 
-    <div style="max-height: 500px" class="flex flex-row gap-10 px-20 pb-20 my-auto">
+    <div style="max-height: 500px" class="flex flex-row gap-10 px-20 pb-20 my-auto recently_added">
+        {{-- @for ($i = 1; $i < 3; $i++) --}}
         <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
+            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
+            <div class="p-3">
+                <h1 class="text-xl mb-5">{{$recAdd1}}</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
+                <br>
+                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+            </div>
+        </div>
+
+        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
+            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
+            <div class="p-3">
+                <h1 class="text-xl mb-5">{{$recAdd2}}</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
+                <br>
+                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+            </div>
+        </div>
+
+        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
+            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
+            <div class="p-3">
+                <h1 class="text-xl mb-5">{{$recAdd3}}</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
+                <br>
+                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+            </div>
+        </div>
+        
+       
+        {{-- @endfor --}}
+        {{-- <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
             <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
             <div class="p-3">
                 <h1 class="text-xl mb-5">Hello</h1>
@@ -73,7 +106,7 @@ $_SITE_TITLE = 'Module_4_Database'
                 <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
             </div>
             
-        </div>
+        </div> --}}
     </div>
 
     <br><hr><br>
@@ -112,6 +145,24 @@ $_SITE_TITLE = 'Module_4_Database'
 
 
     <script>
+
+        // window.addEventListener('load', (event) => {
+        //     let recently = document.querySelector('.recently_added');
+
+        //     for(let i = 0; i < 3; i++){
+        //         recently.innerHTML += `
+        //         <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
+        //             <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
+        //             <div class="p-3">
+        //                 <h1 class="text-xl mb-5"></h1>
+        //                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
+        //                 <br>
+        //                 <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+        //             </div>
+            
+        //         </div>`;
+        //     }
+        // });
 
         // Textarea Counter
         let textarea = document.querySelector('#textarea');

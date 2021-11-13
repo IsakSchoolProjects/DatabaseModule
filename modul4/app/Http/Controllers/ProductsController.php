@@ -10,6 +10,7 @@ use DB;
 
 class ProductsController extends Controller
 {
+
         public function contact(Request $request){
 
         $name = $request->input('name');
