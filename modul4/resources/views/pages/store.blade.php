@@ -6,40 +6,47 @@ $_SITE_TITLE = 'Module_4_Database'
 
 @extends('layouts/app')
 
+
 @section('content')
 
-    <main class="bg-background flex flex-grow px-6 md:px-24 lg:px-26 xl:px-36 2xl:px-80">
-        <!-- <div class="bg-container rounded-lg w-full">s</div> -->
-    </main>
+<div id="products" class="flex flex-row flex-wrap gap-4 mx-12">
 
-    <!-- Carousel -->
-    <div style="margin:auto;" class="landing-page">
-        <div class="carousel">
-            <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
-            <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
-            <a class="l1carouselLink text-md" href="#">Learn more ></a>
-            <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">
-        </div>
+</div>
 
-        <div>
-            <!-- Left -->
-            <div class="flex flex-row"><i onclick="prev()" class=" fas fa-chevron-left fa-3x cursor-pointer"></i></div>
+<script>
+    let res = {!! $res !!};
 
-            <!-- Right -->
-            <div class="flex flex-row-reverse"><i onclick="next()" class="fas fa-chevron-right fa-3x cursor-pointer"></i></div>
-        </div>
-    </div>
+    console.log(res);
+    let productsEl = document.getElementById('products');
 
-    <br><br>
+    for(let i = 0; i < res.length; i++) {
+        let post = res[i];
+        
+        productsEl.innerHTML +=`
+            <div id="${post.id}" class="bg-gray-700 p-6 w-80 m-auto rounded-3xl">
+                <img src="../media/images/cars/${post.id}_1.jpg" class="rounded-xl h-40 drop-shadow"></img>
+                <div class="text-gray-400 text-sm pt-4">${post.model_year} / 890 mil / ${post.color}</div>
+                <div class="text-gray-300 font-bold">${post.brand} ${post.model}</div>
+                <div class="text-gray-300 text-sm font-semibold">Priced at: ${post.price} USD</div>
+                <div class="text-sm flex justify-between place-items-center border-t border-gray-500 pt-2">
+                <div class="cursor-pointer text-center pt-1 text-gray-400 font-semibold underline hover:text-gray-500">Learn more</div>
+                <div class="cursor-pointer font-semibold text-center bg-blue-400 rounded-md p-1 drop-shadow text-gray-700 hover:bg-blue-500 hover:text-gray-800">Add to cart</div>
+                </div>
+            </div>`
+    }
+</script>
 
-    <!-- Recently added -->
-    <h1 style="text-align: center;" class="text-5xl mb-20">Recently added</h1>
+<style>
+    img {
+        
+    }
+    div img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+</style>
 
-    <div style="max-height: 500px" class="flex flex-row gap-10 px-20 pb-20 my-auto">
-    
-    </div>
+<br><br><br>
 
 @endsection
-
-</body>
-</html>
