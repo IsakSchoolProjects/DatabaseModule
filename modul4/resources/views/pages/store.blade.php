@@ -9,6 +9,10 @@ $_SITE_TITLE = 'Module_4_Database'
 
 @section('content')
 
+@if (\Session::has('insert_success'))
+        <div>{!! \Session::get('insert_success') !!}</div>
+@endif
+
 <div id="products" class="flex flex-row flex-wrap gap-4 mx-12">
 
 </div>
@@ -30,7 +34,7 @@ $_SITE_TITLE = 'Module_4_Database'
                 <div class="text-gray-300 text-sm font-semibold">Priced at: ${post.price} USD</div>
                 <div class="text-sm flex justify-between place-items-center border-t border-gray-500 pt-2">
                 <div class="cursor-pointer text-center pt-1 text-gray-400 font-semibold underline hover:text-gray-500">Learn more</div>
-                <div class="cursor-pointer font-semibold text-center bg-blue-400 rounded-md p-1 drop-shadow text-gray-700 hover:bg-blue-500 hover:text-gray-800">Add to cart</div>
+                <a href="/add_cart_item/${post.id}" class="cursor-pointer font-semibold text-center bg-blue-400 rounded-md p-1 drop-shadow text-gray-700 hover:bg-blue-500 hover:text-gray-800">Add to cart</a>
                 </div>
             </div>`
     }

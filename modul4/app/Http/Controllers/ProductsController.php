@@ -41,7 +41,7 @@ class ProductsController extends Controller
         return view('pages.index');
     }
     
-    function list(){
+    function showAllProducts(){
         $res = DB::table('products')->get();
 
         return view('pages.store')->with('res', $res);
