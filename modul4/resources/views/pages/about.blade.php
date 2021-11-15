@@ -18,7 +18,7 @@ $_SITE_TITLE = 'Module_4_Database'
 
 <div class="flex flex-row  mx-auto mt-16">
     <div class="filter drop-shadow w-52 bg-gray-100 p-6 rounded-t-full rounded-b-lg ">
-        <img class="w-32 h-32 rounded-full mx-auto m-2" src="../media/images/cars/cat.jpg" alt="name of">
+        <img class="w-32 h-32 rounded-full mx-auto m-2" src="./media/images/about/cat.jpg" alt="name of">
         <h2 class="text-2xl center pb-6">Isak</h2>
         <p>Vad har name1 gjort, ... Lorem ipsum dolor sit amet.</p>
 
@@ -26,7 +26,7 @@ $_SITE_TITLE = 'Module_4_Database'
         <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fal fa-briefcase mr-2"></i><a target="_blank" href="#">Länknamn</a></p>
     </div>
     <div class="filter drop-shadow mx-20 w-52 bg-gray-100 p-6 rounded-t-full rounded-b-lg">
-        <img class="w-32 h-32 rounded-full mx-auto m-2" src="../media/images/cars/cat.jpg" alt="name of">
+        <img class="w-32 h-32 rounded-full mx-auto m-2" src="./media/images/about/matilda.png" alt="name of">
         <h2 class="text-2xl center pb-6">Matilda</h2>
         <p>Vad har name2 gjort, ... Lorem ipsum dolor sit amet.</p>
 
@@ -35,7 +35,7 @@ $_SITE_TITLE = 'Module_4_Database'
 
     </div>
     <div class="filter drop-shadow w-52 bg-gray-100 p-6 rounded-t-full rounded-b-lg">
-        <img class="w-32 h-32 rounded-full mx-auto m-2" src="../media/images/cars/cat.jpg" alt="name of">
+        <img class="w-32 h-32 rounded-full mx-auto m-2" src="./media/images/about/cat.jpg" alt="name of">
         <h2 class="text-2xl center pb-6">Sebastian</h2>
         <p>Vad har name3 gjort, ... Lorem ipsum dolor sit amet.</p>
 
