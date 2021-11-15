@@ -84,7 +84,7 @@ $_SITE_TITLE = 'Module_4_Database'
         <p class="hover:text-blue-500"><a target="_blank" href="https://fontawesome.com/">Font Awesome</a></p>
     </div>
     <div class="filter drop-shadow bg-gray-100 p-8 w-56 mb-4 rounded-lg">
-        <h1 class="text-2xl text-blue-500 border-b border-gray-300">Hmm..</h1>
+        <h1 class="text-2xl text-blue-500 border-b border-gray-300">Lan</h1>
     </div>
 </div>
 

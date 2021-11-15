@@ -1,6 +1,6 @@
 <?php
 
-$_SITE_TITLE = 'Module_4_Database'
+$_SITE_TITLE = 'Module_4_Database';
 
 ?>
 
@@ -23,7 +23,7 @@ $_SITE_TITLE = 'Module_4_Database'
                 {{-- <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1> --}}
                 <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
                 {{-- <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p> --}}
-                <a class="l1carouselLink text-md" href="#">Learn more ></a>
+                <a class="l1carouselLink text-md uppercase" href="#">Learn more ></a>
                 {{-- <a class="l1carouselLink text-md" href="#">Learn more ></a> --}}
             </div>
             <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">
@@ -44,18 +44,19 @@ $_SITE_TITLE = 'Module_4_Database'
     <h1 style="text-align: center;" class="text-5xl mb-20">Recently added</h1>
 
     <div style="" class="flex flex-row gap-10 px-20 pb-20 my-auto recently_added">
-        @for ($i = 1; $i < 4; $i++)
-        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-            <img src="../media/images/cars/{{$data['id']}}_1.jpg" class="rounded-md" alt="">
-            <div class="p-3">
-                <h1 class="text-xl mb-5">{{$data['brand']}} {{$data['model']}}</h1>
+
+        {{-- <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6"> --}}
+            {{-- <img src="../media/images/cars/{{$data['id']}}_1.jpg" class="rounded-md" alt=""> --}}
+            {{-- <div class="p-6"> --}}
+                {{-- <h1 class="text-xl mb-5">{{$data['brand']}} {{$data['model']}} {{$recAdd1}}</h1>
                 <p>{{$data['model_year']}} / {{$data['color']}}</p>
-                <p class="">Priced at: {{$data['price']}} USD {{$recAdd1}}</p>
-                <br>
-                <a href="/store" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
-            </div>
-        </div>
-        @endfor
+                <p class="">Priced at: {{$data['price']}} USD</p> --}}
+                {{-- <p>{{$data[0].id}}</p> --}}
+                {{-- <br> --}}
+                {{-- <a href="/store" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a> --}}
+            {{-- </div> --}}
+        {{-- </div> --}}
+
         {{-- <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
             <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
             <div class="p-3">
@@ -125,6 +126,30 @@ $_SITE_TITLE = 'Module_4_Database'
 
     <script>
 
+        let products = {!! json_encode($data) !!};
+         console.log(products[0]['id']);
+
+        let recAdd = document.querySelector('.recently_added');
+
+            for(let i = 0; i < products.length; i++){
+                console.log(i);
+                
+                recAdd.innerHTML += `
+                <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
+                    <img src="../media/images/cars/${products[i]['id']}_1.jpg" class="rounded-md" alt="">
+                    <div class="p-6">
+                        <h1 class="text-xl mb-5">${products[i]['brand']} ${products[i]['model']}</h1>
+                        <p>${products[i]['model_year']} / <span class="capitalize">${products[i]['fuel']}</span> / ${products[i]['color']}</p>
+                        <p class="text-gray-400">Priced at: ${products[i]['price']} USD</p>
+                        <p></p>
+                        <br>
+                        <a href="/store" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+                    </div>   
+                </div> `;
+
+            }
+        // });
+
         // window.addEventListener('load', (event) => {
         //     let recently = document.querySelector('.recently_added');
 
@@ -162,7 +187,7 @@ $_SITE_TITLE = 'Module_4_Database'
                 carousel.innerHTML = `<div class="flex flex-row">
                 <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
                 <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
-                <a class="l1carouselLink text-md" href="#">Learn more ></a>
+                <a class="l1carouselLink text-md uppercase" href="#">Learn more ></a>
                 </div>
                 <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">`;
 
