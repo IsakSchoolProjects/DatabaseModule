@@ -59,4 +59,10 @@ class PagesController extends Controller
     public function cart() {
         return view('pages.cart');
     }
+
+    public function car($id){
+        $data = Recadd::find($id);
+
+        return view('pages/car')->with('data', $data);
+    }
 }

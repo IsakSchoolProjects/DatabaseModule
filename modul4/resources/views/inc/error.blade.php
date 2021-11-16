@@ -2,3 +2,5 @@
     <p class="m-3"><i class="fal fa-check mr-4"></i>Successfully</p>
     <p class="m-3"><i class="fal fa-times mr-4"></i>Error</p>
 </div> --}}
+
+{{-- #FECDD3, #FFF1F2  RED--}}

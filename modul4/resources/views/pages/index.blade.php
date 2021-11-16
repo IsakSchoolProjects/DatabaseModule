@@ -31,10 +31,10 @@ $_SITE_TITLE = 'Module_4_Database';
 
         <div>
             <!-- Left -->
-            <div class="flex flex-row"><i onclick="prev()" class=" fas fa-chevron-left fa-3x cursor-pointer"></i></div>
+            <div class="flex flex-row"><i onclick="prev()" class=" fas fa-chevron-left c-left fa-3x cursor-pointer"></i></div>
 
             <!-- Right -->
-            <div class="flex flex-row-reverse"><i onclick="next()" class="fas fa-chevron-right fa-3x cursor-pointer"></i></div>
+            <div class="flex flex-row-reverse"><i onclick="next()" class="fas fa-chevron-right c-right fa-3x cursor-pointer"></i></div>
         </div>
     </div>
 
@@ -105,25 +105,7 @@ $_SITE_TITLE = 'Module_4_Database';
                 </div> `;
 
             }
-        // });
-
-        // window.addEventListener('load', (event) => {
-        //     let recently = document.querySelector('.recently_added');
-
-        //     for(let i = 0; i < 3; i++){
-        //         recently.innerHTML += `
-        //         <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-        //             <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
-        //             <div class="p-3">
-        //                 <h1 class="text-xl mb-5"></h1>
-        //                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
-        //                 <br>
-        //                 <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
-        //             </div>
-            
-        //         </div>`;
-        //     }
-        // });
+ 
 
         // Textarea Counter
         let textarea = document.querySelector('#textarea');

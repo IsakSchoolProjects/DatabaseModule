@@ -32,3 +32,4 @@ Route::get('/remove_all_cart_items', [CartController::class, 'remove_all_cart_it
 Route::get('/add_cart_item/{cart_item}', [CartController::class, 'add_cart_item']);
 
 Route::get('/contact', [ProductsController::class, 'contact']);
+Route::get('/car/{id}', [PagesController::class, 'car']);
