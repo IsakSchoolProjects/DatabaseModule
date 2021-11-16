@@ -92,9 +92,9 @@ $_SITE_TITLE = 'Module_4_Database';
                 console.log(i);
                 
                 recAdd.innerHTML += `
-                <div class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-                    <img src="../media/images/cars/${products[i]['id']}_1.jpg" class="rounded-md" alt="">
-                    <div class="p-6 m-auto">
+                <div class="flex flex-col justify-between bg-gray-200 rounded-md mx-auto">
+                    <img src="../media/images/cars/${products[i]['id']}_1.jpg" class="w-96 rounded-md" alt="">
+                    <div class="p-6">
                         <h1 class="text-xl mb-5">${products[i]['brand']} ${products[i]['model']}</h1>
                         <p>${products[i]['model_year']} / <span class="capitalize">${products[i]['fuel']}</span> / ${products[i]['color']}</p>
                         <p class="text-gray-400">Priced at: ${products[i]['price']} USD</p>
