@@ -20,7 +20,7 @@ $_SITE_TITLE = 'Module_4_Database'
     <div class="filter drop-shadow w-52 bg-gray-100 p-6 rounded-t-full rounded-b-lg ">
         <img class="w-32 h-32 rounded-full mx-auto m-2" src="../media/images/about/cat.jpg" alt="name of">
         <h2 class="text-2xl center pb-6">Isak</h2>
-        <p class="center">Vad har name1 gjort, ... Lorem ipsum dolor sit amet.</p>
+        <p class="center">Store & cart back-end, </p>
 
         <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fab fa-linkedin mr-2"></i><a target="_blank" href="#">LinkedIn</a></p>
         <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fal fa-briefcase mr-2"></i><a target="_blank" href="https://isakjensen.com/">Portfolio</a></p>
@@ -28,7 +28,7 @@ $_SITE_TITLE = 'Module_4_Database'
     <div class="filter drop-shadow mx-20 w-52 bg-gray-100 p-6 rounded-t-full rounded-b-lg">
         <img class="w-32 h-32 rounded-full mx-auto m-2" src="../media/images/about/matilda.png" alt="Picture of Matilda">
         <h2 class="text-2xl center pb-6">Matilda</h2>
-        <p class="center">Design of landing page, about page and the footer. functionality of contact form and recently added section (database).</p>
+        <p class="center">Design of landing page, about page and the footer. Functionality of the-contact form and recently added section (database).</p>
 
         <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fab fa-linkedin mr-2"></i><a target="_blank" href="https://www.linkedin.com/in/matilda-j%C3%B6nsson-810979221/">LinkedIn</a></p>
         <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fal fa-briefcase mr-2"></i><a target="_blank" href="https://matildajonsson.lund-te4.se/">Portfolio</a></p>
