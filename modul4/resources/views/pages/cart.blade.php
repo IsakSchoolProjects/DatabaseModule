@@ -12,7 +12,9 @@ $_SITE_TITLE = 'Module_4_Database'
 
 <div class="min-h-screen flex flex-col cartContainer">
     @if (\Session::has('delete_success'))
-        <div>{!! \Session::get('delete_success') !!}</div>
+        <div style="background-image: linear-gradient(to right, #FECDD3, #FFF1F2)" class="h-12 bg-lime-100 w-2/3 mx-auto mt-4 rounded-md mb-4">
+            <p class="m-3"><i class="fal fa-check mr-4"></i>{!! \Session::get('delete_success') !!}</p>
+        </div>
     @endif
     <div class="mx-auto flex p-8 w-3/5 border-b border-gray-300 bottomDiv">
         <div class="relative flex-col w-full">

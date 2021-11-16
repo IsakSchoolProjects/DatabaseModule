@@ -9,8 +9,11 @@ $_SITE_TITLE = 'Module_4_Database'
 
 @section('content')
 
+
 @if (\Session::has('insert_success'))
-        <div>{!! \Session::get('insert_success') !!}</div>
+        <div style="background-image: linear-gradient(to right, #ECFCCB, #F7FEE7)" class="h-12 bg-lime-100 w-2/3 mx-auto mt-4 rounded-md mb-4">
+            <p class="m-3"><i class="fal fa-check mr-4"></i>{!! \Session::get('insert_success') !!}</p>
+        </div>
 @endif
 
 <div id="products" class="flex flex-row flex-wrap gap-4 mx-12">

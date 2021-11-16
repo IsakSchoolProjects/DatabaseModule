@@ -18,6 +18,8 @@
 
     @include('./inc/header')
 
+    @include('./inc/error')
+
     @yield('content')
 
     @include('./inc/footer')

@@ -44,49 +44,6 @@ $_SITE_TITLE = 'Module_4_Database';
     <h1 style="text-align: center;" class="text-5xl mb-20">Recently added</h1>
 
     <div style="" class="flex flex-row gap-10 px-20 pb-20 my-auto recently_added">
-
-        {{-- <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6"> --}}
-            {{-- <img src="../media/images/cars/{{$data['id']}}_1.jpg" class="rounded-md" alt=""> --}}
-            {{-- <div class="p-6"> --}}
-                {{-- <h1 class="text-xl mb-5">{{$data['brand']}} {{$data['model']}} {{$recAdd1}}</h1>
-                <p>{{$data['model_year']}} / {{$data['color']}}</p>
-                <p class="">Priced at: {{$data['price']}} USD</p> --}}
-                {{-- <p>{{$data[0].id}}</p> --}}
-                {{-- <br> --}}
-                {{-- <a href="/store" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a> --}}
-            {{-- </div> --}}
-        {{-- </div> --}}
-
-        {{-- <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
-            <div class="p-3">
-                <h1 class="text-xl mb-5">Hello</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
-                <br>
-                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
-            </div>
-            
-        </div>
-        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-            <img src="../media/images/cars/l2.jpg" class="rounded-md" alt="">
-            <div class="p-3">
-                <h1 class="text-xl mb-5">Hello</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
-                <br>
-                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
-            </div>
-            
-        </div>
-        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-            <img src="../media/images/cars/l3.jpg" class="rounded-md" alt="">
-            <div class="p-3 mb-3">
-                <h1 class="text-xl mb-5">Hello</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
-                <br>
-                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
-            </div>
-            
-        </div> --}}
     </div>
 
     <br><hr><br>
