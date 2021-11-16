@@ -93,7 +93,7 @@ $_SITE_TITLE = 'Module_4_Database';
                 
                 recAdd.innerHTML += `
                 <div class="flex flex-col justify-between bg-gray-200 rounded-md mx-auto">
-                    <img src="../media/images/cars/${products[i]['id']}_1.jpg" class="w-96 rounded-md" alt="">
+                    <div class="h-48 rounded-md w-80" style="background-size: cover; background-image: url(../media/images/cars/${products[i]['id']}_1.jpg); background-repeat: no-repeat;"></div>
                     <div class="p-6">
                         <h1 class="text-xl mb-5">${products[i]['brand']} ${products[i]['model']}</h1>
                         <p>${products[i]['model_year']} / <span class="capitalize">${products[i]['fuel']}</span> / ${products[i]['color']}</p>
