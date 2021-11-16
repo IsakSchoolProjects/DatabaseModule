@@ -23,7 +23,7 @@ $_SITE_TITLE = 'Module_4_Database'
         <p class="center">Vad har name1 gjort, ... Lorem ipsum dolor sit amet.</p>
 
         <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fab fa-linkedin mr-2"></i><a target="_blank" href="#">LinkedIn</a></p>
-        <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fal fa-briefcase mr-2"></i><a target="_blank" href="#">Portfolio</a></p>
+        <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fal fa-briefcase mr-2"></i><a target="_blank" href="https://isakjensen.com/">Portfolio</a></p>
     </div>
     <div class="filter drop-shadow mx-20 w-52 bg-gray-100 p-6 rounded-t-full rounded-b-lg">
         <img class="w-32 h-32 rounded-full mx-auto m-2" src="../media/images/about/matilda.png" alt="Picture of Matilda">
@@ -93,10 +93,11 @@ $_SITE_TITLE = 'Module_4_Database'
     <div class="filter drop-shadow bg-gray-100 p-8 w-56 rounded-lg">
         <h1 class="text-2xl text-blue-500 mb-4 border-b border-gray-300">Tools</h1>
 
+        <p class="hover:text-blue-500"><a target="_blank" href="https://laravelcollective.com/">Laravel Collective</a></p>
         <p class="hover:text-blue-500"><a target="_blank" href="https://fontawesome.com/">Font Awesome</a></p>
         <p class="hover:text-blue-500"><a target="_blank" href="https://tailwindcss.com/">Tailwind</a></p>
         <p class="hover:text-blue-500"><a target="_blank" href="https://laravel.com/">Laravel</a></p>
-        <p class="hover:text-blue-500"><a target="_blank" href="https://laravelcollective.com/">Laravel Collective</a></p>
+        
     </div>
     <div class="filter drop-shadow bg-gray-100 p-8 w-56 rounded-lg">
         <h1 class="text-2xl text-blue-500 mb-4 border-b border-gray-300">Languages</h1>
@@ -104,7 +105,7 @@ $_SITE_TITLE = 'Module_4_Database'
         <p class="hover:text-blue-500">HTML</p>
         <p class="hover:text-blue-500">CSS</p>
         <p class="hover:text-blue-500">PHP</p>
-        <p class="hover:text-blue-500">Laravel</p>
+        <p class="hover:text-blue-500">Blade</p>
     </div>
 </div>
 
