@@ -39,8 +39,10 @@ class ProductsController extends Controller
             )
         );
 
+        $data = DB::select(DB::raw("SELECT * FROM products ORDER BY id DESC LIMIT 3"));
+
         // return DB::table('contact')->get();
-        return view('pages.index');
+        return view('pages.index')->with('data', $data);
     }
     
     function showAllProducts($order){
