@@ -23,7 +23,7 @@ $_SITE_TITLE = 'Module_4_Database';
                 {{-- <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1> --}}
                 <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
                 {{-- <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p> --}}
-                <a class="l1carouselLink text-md uppercase" href="#">Learn more ></a>
+                <a class="l1carouselLink text-md uppercase" href="/about">Learn more ></a>
                 {{-- <a class="l1carouselLink text-md" href="#">Learn more ></a> --}}
             </div>
             <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">
@@ -100,7 +100,7 @@ $_SITE_TITLE = 'Module_4_Database';
                         <p class="text-gray-400">Priced at: ${products[i]['price']} USD</p>
                         <p></p>
                         <br>
-                        <a href="/store" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+                        <a href="/car/${products[i]['id']}" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
                     </div>   
                 </div> `;
 
@@ -126,7 +126,7 @@ $_SITE_TITLE = 'Module_4_Database';
                 carousel.innerHTML = `<div class="flex flex-row">
                 <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
                 <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
-                <a class="l1carouselLink text-md uppercase" href="#">Learn more ></a>
+                <a class="l1carouselLink text-md uppercase" href="/about">Learn more ></a>
                 </div>
                 <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">`;
 
@@ -139,7 +139,7 @@ $_SITE_TITLE = 'Module_4_Database';
                 carousel.innerHTML = `<div class="flex flex-row-reverse">
                 <h1 class="l2carouselText text-4xl font-black text-cyan-700">Volvo S60</h1>
                 <p class="l2carouselTextP text-2xl font-black text-cyan-700">The car of the year</p>
-                <a class="l2carouselLink text-md text-orange-50" href="#">Learn more ></a>
+                <a class="l2carouselLink text-md text-orange-50" href="/about">Learn more ></a>
                 </div>
                 <img class="rounded-md" src="../media/images/cars/l2.jpg" class="" alt="">`;
 

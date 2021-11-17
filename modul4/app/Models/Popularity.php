@@ -5,8 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class Popularity extends Model
 {
+    use HasFactory;
+
     // Table Name
     protected $table = 'popularity';
     // Primary Key
@@ -14,7 +16,7 @@ class Product extends Model
    // Timestamps
    public $timestamps = false;
 
-   public function views(){
-       return $this->belongsTo('App\Models\Popularity');
+   public function car(){
+       return $this->hasMany('App\Models\Product');
    }
 }

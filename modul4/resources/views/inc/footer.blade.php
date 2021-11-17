@@ -2,7 +2,7 @@
 
     <div class=" mx-5 ml-10 flex-1">
         <h2 class="text-xl text-blue-500 pb-2">Products</h2>
-        <p class="text-xs text-gray-200 hover:text-blue-500"><a href="/store">Store</a></p>
+        <p class="text-xs text-gray-200 hover:text-blue-500"><a href="/store/no_order">Store</a></p>
         <p class="text-xs text-gray-200 hover:text-blue-500"><a href="/cart">Cart</a></p>
         <p class="text-xs text-gray-200 hover:text-blue-500"><a href="#">Liked</a></p>
     </div>

@@ -3,7 +3,7 @@
         <!-- Left -->
         <div class="flex flex-row gap-16 text-lg my-auto">
             <a href="/" class="text-gray-400 hover:text-content">Home</a>
-            <a href="/store" class="text-gray-400 hover:text-content">Store</a>
+            <a href="/store/no_order" class="text-gray-400 hover:text-content">Store</a>
             <a href="/about" class="text-gray-400 hover:text-content">About</a>
             <a href="/cart" class="text-gray-400 hover:text-content">Cart</a>
         </div>

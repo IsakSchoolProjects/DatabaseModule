@@ -9,6 +9,17 @@ $_SITE_TITLE = 'Module_4_Database'
 
 @section('content')
 
+<select onchange="selected()" name="" id="options" class="dropdown border-2 border-gray-100 w-32 mb-12 mx-24 px-2 py-2 rounded-md text-gray-400 font-medium hover:bg-gray-200">
+    <option class="no_order" value="no_order" disabled selected>Order by</option>
+    <option class="popularity" value="popularity">Popularity</option>
+    <option class="latest" value="latest">Latest</option>
+    <option value="model">Models</option>
+    <option value="brand">Brand</option>
+</select>
+
+<p></p>
+
+{{-- Filter... --}}
 
 @if (\Session::has('insert_success'))
         <div style="background-image: linear-gradient(to right, #ECFCCB, #F7FEE7)" class="h-12 bg-lime-100 w-2/3 mx-auto mt-4 rounded-md mb-4">
@@ -20,8 +31,16 @@ $_SITE_TITLE = 'Module_4_Database'
 
 </div>
 
-<script>
-    let res = {!! $res !!};
+<script> 
+
+    let select = document.querySelector('.dropdown');
+
+    function selected(){
+        let selected = select.value;
+        window.location.href = `/store/${selected}`;
+    }
+
+    let res = {!! json_encode($res) !!};
 
     console.log(res);
     let productsEl = document.getElementById('products');

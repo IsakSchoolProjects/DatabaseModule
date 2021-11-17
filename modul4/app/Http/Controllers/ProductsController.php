@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Popularity;
+
 use Illuminate\Http\Request;
 // use Illuminate\Support\Facades\DB;
 
@@ -41,9 +43,30 @@ class ProductsController extends Controller
         return view('pages.index');
     }
     
-    function showAllProducts(){
-        $res = DB::table('products')->get();
-
+    function showAllProducts($order){
+        // $order_by_views = Popularity::all()->sortByDesc('views');
+        // $order = $order_by_views[1]['car_id'];
+        if($order == 'no_order'){
+            $res = DB::table('products')->get();
+        }
+        elseif($order == 'popularity'){
+            $res = DB::select(DB::raw('SELECT popularity.views, products.* FROM products
+            JOIN popularity ON popularity.car_id = products.id
+            ORDER BY popularity.views DESC'));
+        }
+        elseif($order == 'model'){
+            $res = DB::select(DB::raw('SELECT * FROM `products` ORDER BY model ASC'));
+        }
+        elseif($order == 'latest'){
+            $res = DB::select(DB::raw('SELECT * FROM `products` ORDER BY id DESC'));
+        }
+        elseif($order == 'brand'){
+            $res = DB::select(DB::raw('SELECT * FROM `products` ORDER BY brand'));
+        }
+        else{
+            $res = DB::table('products')->get();
+        }
+        
         return view('pages.store')->with('res', $res);
     }
 

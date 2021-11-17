@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 // use App\Models\User;
 use App\Models\Recadd;
+use App\Models\Popularity;
 
 use Illuminate\Support\Facades\Storage;
 use DB;
@@ -61,6 +62,13 @@ class PagesController extends Controller
     }
 
     public function car($id){
+        
+        // Updates views
+        $table = Popularity::find($id);
+        $views = $table['views'];
+        $views = $views + 1;
+        $popularity = DB::select(DB::raw("UPDATE `popularity` SET `views` = '$views' WHERE `popularity`.`id` = $id"));
+
         $data = Recadd::find($id);
 
         return view('pages/car')->with('data', $data);
