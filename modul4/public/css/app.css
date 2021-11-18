@@ -1,36 +1,27 @@
 
 /* Prev/Next Carousel */
-.c-left{
+.fa-chevron-left{
     position: absolute;
     top: 350px;
     padding: 20px;
     color: #BFDBFE;
 }
 
+/* img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
 /* #1B1A1F
 #25262B
 #D9D9E3
 #3DB2FF */
 
-.c-right{
+.fa-chevron-right{
     position: absolute;
     top: 350px;
     padding: 20px;
     color: #BFDBFE;
-}
-
-.car-left{
-    position: absolute;
-    top: 320px;
-    padding: 20px;
-    /* color: #BFDBFE; */
-}
-
-.car-right{
-    position: absolute;
-    top: 320px;
-    padding: 20px;
-    /* color: #BFDBFE; */
 }
 
 .center{
@@ -93,10 +84,3 @@
     filter: brightness(-90%);
 }
 
-.img2{
-    display: none;
-}
-
-.img3{
-    display: none;
-}

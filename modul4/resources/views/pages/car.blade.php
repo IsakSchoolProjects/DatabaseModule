@@ -19,7 +19,7 @@ $_SITE_TITLE = 'Module_4_Database';
     <!-- Carousel -->
     <div style="margin:auto;" class="img1">
         <div class="carousel">
-            <div class="rounded-md" style="height: 400px; background-size: cover; background-image: url(../media/images/cars/{{$data['id']}}_1.jpg); background-repeat: no-repeat;"></div>
+            <div class="rounded-md" style=" height: 400px; background-size: cover; background-image: url(../media/images/cars/{{$data['id']}}_1.jpg); background-repeat: no-repeat; background-position: center;"></div>
         </div>
 
         <div>
@@ -33,7 +33,7 @@ $_SITE_TITLE = 'Module_4_Database';
 
     <div style="margin:auto;" class="img2">
         <div class="carousel">
-            <div class="rounded-md" style="height: 400px; background-size: cover; background-image: url(../media/images/cars/{{$data['id']}}_2.jpg); background-repeat: no-repeat;"></div>
+            <div class="rounded-md" style="height: 400px; background-size: cover; background-image: url(../media/images/cars/{{$data['id']}}_2.jpg); background-repeat: no-repeat; background-position: center;"></div>
         </div>
 
         <div>
@@ -47,7 +47,7 @@ $_SITE_TITLE = 'Module_4_Database';
 
     <div style="margin:auto;" class="img3">
         <div class="carousel">
-            <div class="rounded-md" style="height: 400px; background-size: cover; background-image: url(../media/images/cars/{{$data['id']}}_3.jpg); background-repeat: no-repeat;"></div>
+            <div class="rounded-md" style="height: 400px; background-size: cover; background-image: url(../media/images/cars/{{$data['id']}}_3.jpg); background-repeat: no-repeat; background-position: center;"></div>
         </div>
 
         <div>

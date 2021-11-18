@@ -8,14 +8,25 @@
             <a href="/cart" class="text-gray-400 hover:text-content">Cart</a>
         </div>
         <!-- Right -->
-        <div class="flex flex-row gap-6 text-md">
-            <a href="/login" class="py-2 hover:text-content">Login</a>
-            <a href="/register" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Register</a>
-        </div>
+        {{-- @if() --}}
+        @guest
+        @if(Route::has('login'))
 
-        <div class="hidden flex flex-row gap-6 text-md">
-            <a href="#" class="text-highlight py-2 my-auto hover:text-content">John Doe</a>
+            <div class="flex flex-row gap-6 text-md">
+                    <a href="/login" class="py-2 hover:text-content">Login</a>
+                @endif
+                @if(Route::has('register'))
+                    <a href="/register" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Register</a>
+            </div>
+            @endif
+
+        {{-- @endif --}}
+            @else
+        <div class="flex flex-row gap-6 text-md">
+            <a href="/settings" class="text-highlight py-2 my-auto hover:text-content">{{ Auth::user()->name }}</a>
             <img class="w-16 rounded-full border border-content" src="https://i.pravatar.cc/100">
         </div>
+
+        @endguest
     </nav>
 </header>

@@ -34,3 +34,9 @@ Route::get('/add_cart_item/{cart_item}', [CartController::class, 'add_cart_item'
 
 Route::get('/contact', [ProductsController::class, 'contact']);
 Route::get('/car/{id}', [PagesController::class, 'car']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/settings', [PagesController::class, 'settings']);

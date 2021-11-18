@@ -1,4 +1,4 @@
-<footer style="box-shadow:inset 0px 2px 10px 0px #3B82F6;" class="flex flex-row gap-20 bg-gray-600 rounded-t-xl py-7 pl-20 pr-20">
+<footer style="box-shadow:inset 0px 2px 10px 0px #3B82F6; " class="flex flex-row gap-20 bg-gray-600 rounded-t-xl py-7 pl-20 pr-20">
 
     <div class=" mx-5 ml-10 flex-1">
         <h2 class="text-xl text-blue-500 pb-2">Products</h2>

@@ -61,6 +61,10 @@ class PagesController extends Controller
         return view('pages.cart');
     }
 
+    public function settings(){
+        return view('pages.settings');
+    }
+
     public function car($id){
         
         // Updates views
