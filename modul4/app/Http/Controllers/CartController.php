@@ -26,7 +26,7 @@ class CartController extends Controller
         if($deleted_items > 0) {
             return back()->with('delete_success', 'You deleted all items in your cart.');
         }else {
-            return "No items in cart";
+            return back()->with('delete_error', 'No items in cart');
         }
     }
 

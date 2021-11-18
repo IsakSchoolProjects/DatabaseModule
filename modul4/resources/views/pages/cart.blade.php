@@ -16,6 +16,11 @@ $_SITE_TITLE = 'Module_4_Database'
             <p class="m-3"><i class="fal fa-check mr-4"></i>{!! \Session::get('delete_success') !!}</p>
         </div>
     @endif
+    @if(\Session::has('delete_error'))
+        <div style="background-image: linear-gradient(to right, #FECDD3, #FFF1F2)" class="h-12 bg-lime-100 w-2/3 mx-auto mt-4 rounded-md mb-4">
+            <p class="m-3"><i class="fal fa-times mr-4"></i>{!! \Session::get('delete_error') !!}</p>
+        </div>
+    @endif
     <div class="mx-auto flex p-8 w-3/5 border-b border-gray-300 bottomDiv">
         <div class="relative flex-col w-full">
             <div class="flex items-baseline absolute">
@@ -52,7 +57,7 @@ $_SITE_TITLE = 'Module_4_Database'
 
         div.innerHTML = `<div class="mx-auto flex p-8 w-3/5 flex-col">
                             <div class="font-bold text-xl">No items in cart</div>
-                            <a href="/store" class="underline text-gray-400">Go to store</a>
+                            <a href="/store/no_order" class="underline text-gray-400">Go to store</a>
                         </div>`
         cartContainer.insertBefore(div, bottomDiv);
     }
