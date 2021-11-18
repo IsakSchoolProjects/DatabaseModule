@@ -22,7 +22,7 @@ $_SITE_TITLE = 'Module_4_Database'
 {{-- Filter... --}}
 
 @if (\Session::has('insert_success'))
-        <div style="background-image: linear-gradient(to right, #ECFCCB, #F7FEE7)" class="h-12 bg-lime-100 w-2/3 mx-auto mt-4 rounded-md mb-4">
+        <div style="background-image: linear-gradient(to right, #ECFCCB, #F7FEE7)" class="h-12 bg-lime-100 w-2/3 mx-auto rounded-md mb-4">
             <p class="m-3"><i class="fal fa-check mr-4"></i>{!! \Session::get('insert_success') !!}</p>
         </div>
 @endif
