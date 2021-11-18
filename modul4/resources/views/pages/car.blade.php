@@ -31,7 +31,7 @@ $_SITE_TITLE = 'Module_4_Database';
         </div>
     </div>
 
-    <div style="margin:auto;" class="img2">
+    <div style="margin:auto; display: none;" class="img2">
         <div class="carousel">
             <div class="rounded-md" style="height: 400px; background-size: cover; background-image: url(../media/images/cars/{{$data['id']}}_2.jpg); background-repeat: no-repeat; background-position: center;"></div>
         </div>
@@ -45,7 +45,7 @@ $_SITE_TITLE = 'Module_4_Database';
         </div>
     </div>
 
-    <div style="margin:auto;" class="img3">
+    <div style="margin:auto; display: none;" class="img3">
         <div class="carousel">
             <div class="rounded-md" style="height: 400px; background-size: cover; background-image: url(../media/images/cars/{{$data['id']}}_3.jpg); background-repeat: no-repeat; background-position: center;"></div>
         </div>
