@@ -18,11 +18,11 @@ $_SITE_TITLE = 'Module_4_Database'
 
 <div class="flex flex-row  mx-auto mt-16">
     <div class="filter drop-shadow w-52 bg-gray-100 p-6 rounded-t-full rounded-b-lg ">
-        <img class="w-32 h-32 rounded-full mx-auto m-2" src="../media/images/about/cat.jpg" alt="name of">
+        <img class="w-32 h-32 rounded-full mx-auto m-2" src="../media/images/about/isak.jpg" alt="name of">
         <h2 class="text-2xl center pb-6">Isak</h2>
-        <p class="center">Store & cart back-end, </p>
+        <p class="center">Store & cart back-end, navbar design, database structure, parts of the about-page.</p>
 
-        <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fab fa-linkedin mr-2"></i><a target="_blank" href="#">LinkedIn</a></p>
+        <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fab fa-linkedin mr-2"></i><a target="_blank" href="https://linkedin.com/in/isakjensen">LinkedIn</a></p>
         <p class="text-blue-300 mt-4 hover:text-blue-400"><i class="fal fa-briefcase mr-2"></i><a target="_blank" href="https://isakjensen.com/">Portfolio</a></p>
     </div>
     <div class="filter drop-shadow mx-20 w-52 bg-gray-100 p-6 rounded-t-full rounded-b-lg">
