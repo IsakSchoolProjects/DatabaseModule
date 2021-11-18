@@ -18,6 +18,7 @@ class CartController extends Controller
         }
         
     }
+
     public function remove_all_cart_items() {
         $account_id = 1;
 
@@ -25,7 +26,20 @@ class CartController extends Controller
         if($deleted_items > 0) {
             return back()->with('delete_success', 'You deleted all items in your cart.');
         }else {
-            return "No items in cart";
+            return back()->with('delete_error', 'No items in cart');
+        }
+    }
+
+    function add_cart_item($cart_item)
+    {
+        $account_id = 1;
+
+        $inserted_item = DB::insert(DB::raw("INSERT INTO `cart` (`account_id`, `product_id`) VALUES ($account_id, $cart_item)"));
+    
+        if($inserted_item > 0) {
+            return back()->with('insert_success', 'You added an item to your cart.');
+        }else {
+            return "Error, item not found.";
         }
     }
 }

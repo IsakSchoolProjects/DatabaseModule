@@ -1,6 +1,6 @@
 <?php
 
-$_SITE_TITLE = 'Module_4_Database'
+$_SITE_TITLE = 'Module_4_Database';
 
 ?>
 
@@ -23,7 +23,7 @@ $_SITE_TITLE = 'Module_4_Database'
                 {{-- <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1> --}}
                 <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
                 {{-- <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p> --}}
-                <a class="l1carouselLink text-md" href="#">Learn more ></a>
+                <a class="l1carouselLink text-md uppercase" href="/about">Learn more ></a>
                 {{-- <a class="l1carouselLink text-md" href="#">Learn more ></a> --}}
             </div>
             <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">
@@ -31,10 +31,10 @@ $_SITE_TITLE = 'Module_4_Database'
 
         <div>
             <!-- Left -->
-            <div class="flex flex-row"><i onclick="prev()" class=" fas fa-chevron-left fa-3x cursor-pointer"></i></div>
+            <div class="flex flex-row"><i onclick="prev()" class=" fas fa-chevron-left c-left fa-3x cursor-pointer"></i></div>
 
             <!-- Right -->
-            <div class="flex flex-row-reverse"><i onclick="next()" class="fas fa-chevron-right fa-3x cursor-pointer"></i></div>
+            <div class="flex flex-row-reverse"><i onclick="next()" class="fas fa-chevron-right c-right fa-3x cursor-pointer"></i></div>
         </div>
     </div>
 
@@ -43,37 +43,7 @@ $_SITE_TITLE = 'Module_4_Database'
     <!-- Recently added -->
     <h1 style="text-align: center;" class="text-5xl mb-20">Recently added</h1>
 
-    <div style="max-height: 500px" class="flex flex-row gap-10 px-20 pb-20 my-auto">
-        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-            <img src="../media/images/cars/l1.jpg" class="rounded-md" alt="">
-            <div class="p-3">
-                <h1 class="text-xl mb-5">Hello</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
-                <br>
-                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
-            </div>
-            
-        </div>
-        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-            <img src="../media/images/cars/l2.jpg" class="rounded-md" alt="">
-            <div class="p-3">
-                <h1 class="text-xl mb-5">Hello</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
-                <br>
-                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
-            </div>
-            
-        </div>
-        <div style="" class="flex-1 bg-gray-200 rounded-md md:w-12 lg:w-6 xl:w-6 2xl:w-6">
-            <img src="../media/images/cars/l3.jpg" class="rounded-md" alt="">
-            <div class="p-3 mb-3">
-                <h1 class="text-xl mb-5">Hello</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nobis.</p>
-                <br>
-                <a href="#" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
-            </div>
-            
-        </div>
+    <div style="" class="flex flex-row gap-10 px-20 pb-20 my-auto recently_added">
     </div>
 
     <br><hr><br>
@@ -113,6 +83,30 @@ $_SITE_TITLE = 'Module_4_Database'
 
     <script>
 
+        let products = {!! json_encode($data) !!};
+         console.log(products[0]['id']);
+
+        let recAdd = document.querySelector('.recently_added');
+
+            for(let i = 0; i < products.length; i++){
+                console.log(i);
+                
+                recAdd.innerHTML += `
+                <div class="flex flex-col justify-between bg-gray-200 rounded-md mx-auto">
+                    <div class="h-56 rounded-md w-80" style="background-size: cover; background-image: url(../media/images/cars/${products[i]['id']}_1.jpg); background-repeat: no-repeat;"></div>
+                    <div class="p-6">
+                        <h1 class="text-xl mb-5">${products[i]['brand']} ${products[i]['model']}</h1>
+                        <p>${products[i]['model_year']} / <span class="capitalize">${products[i]['fuel']}</span> / ${products[i]['color']}</p>
+                        <p class="text-gray-400">Priced at: ${products[i]['price']} USD</p>
+                        <p></p>
+                        <br>
+                        <a href="/car/${products[i]['id']}" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">More</a>
+                    </div>   
+                </div> `;
+
+            }
+ 
+
         // Textarea Counter
         let textarea = document.querySelector('#textarea');
         let qLetters = document.querySelector('.q');
@@ -132,7 +126,7 @@ $_SITE_TITLE = 'Module_4_Database'
                 carousel.innerHTML = `<div class="flex flex-row">
                 <h1 class="l1carouselText text-4xl font-black text-cyan-700">Volvo XC40</h1>
                 <p class="l1carouselTextP text-2xl font-black text-cyan-700">Electric.</p>
-                <a class="l1carouselLink text-md" href="#">Learn more ></a>
+                <a class="l1carouselLink text-md uppercase" href="/about">Learn more ></a>
                 </div>
                 <img class="rounded-md" src="../media/images/cars/l1.jpg" class="" alt="">`;
 
@@ -145,7 +139,7 @@ $_SITE_TITLE = 'Module_4_Database'
                 carousel.innerHTML = `<div class="flex flex-row-reverse">
                 <h1 class="l2carouselText text-4xl font-black text-cyan-700">Volvo S60</h1>
                 <p class="l2carouselTextP text-2xl font-black text-cyan-700">The car of the year</p>
-                <a class="l2carouselLink text-md text-orange-50" href="#">Learn more ></a>
+                <a class="l2carouselLink text-md text-orange-50" href="/about">Learn more ></a>
                 </div>
                 <img class="rounded-md" src="../media/images/cars/l2.jpg" class="" alt="">`;
 
