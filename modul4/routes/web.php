@@ -21,7 +21,7 @@ use App\Http\Controllers\CartController;
 // });
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/about', [PagesController::class, 'about']);
-Route::get('/store', [ProductsController::class, 'showAllProducts']);
+Route::get('/store', [ProductsController::class, 'list']);
 Route::get('/login', [PagesController::class, 'login']);
 Route::get('/register', [PagesController::class, 'register']);
 Route::get('/cart', [ProductsController::class, 'showCartItems']);
@@ -29,5 +29,4 @@ Route::get('/cart', [ProductsController::class, 'showCartItems']);
 Route::get('/remove_cart_item/{cart_item}', [CartController::class, 'remove_cart_item']);
 Route::get('/remove_all_cart_items', [CartController::class, 'remove_all_cart_items']);
 
-Route::get('/list', [ProductsController::class, 'list']);
 Route::get('/contact', [ProductsController::class, 'contact']);
