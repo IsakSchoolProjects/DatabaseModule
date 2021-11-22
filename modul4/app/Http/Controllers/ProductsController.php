@@ -96,7 +96,7 @@ class ProductsController extends Controller
         $products = [];
 
         if(sizeof($cart_products) > 0) {
-            $products = DB::select(DB::raw("SELECT products.*, cart.product_id FROM products JOIN cart ON cart.product_id = products.id"));    
+            $products = DB::select(DB::raw("SELECT products.*, cart.product_id FROM products JOIN cart ON cart.product_id = products.id WHERE account_id = $account_id"));    
         }
         
         $data = array(
