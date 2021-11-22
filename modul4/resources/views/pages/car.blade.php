@@ -72,7 +72,13 @@ $_SITE_TITLE = 'Module_4_Database';
     <!-- Price -->
   <br>
 
+@if(!Auth::guest())
+
   <a href="/add_cart_item/{{$data['id']}}" class="cursor-pointer font-semibold text-center bg-blue-400 rounded-md p-2 drop-shadow text-gray-700 hover:bg-blue-500 hover:text-gray-800">Add to cart</a>
+
+@endif
+
+
 
   <br><br>
   

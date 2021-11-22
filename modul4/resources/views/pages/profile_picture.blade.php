@@ -15,16 +15,6 @@ $_SITE_TITLE = 'Module_4_Database'
         <a class="text-gray-400" href="/profile_picture">Profile Picture</a>
     </div>
     <hr>
-    <div class="hover:bg-gray-50 pl-2 py-4">
-        <a class="text-gray-400" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-            {{ __('Logout') }}
-        </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-            @csrf
-        </form>
-    </div>
-    <hr>
 </div>
-
 
 @endsection

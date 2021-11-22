@@ -5,10 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+use App\Controllers\Auth;
+
 class CartController extends Controller
 {
+
     public function remove_cart_item($cart_item) {
-        $account_id = 1;
+        $account_id = auth()->user()->id;
 
         $deleted_item = DB::delete(DB::raw("DELETE FROM cart WHERE id = $cart_item AND account_id = $account_id"));
         if($deleted_item > 0) {
@@ -20,7 +23,7 @@ class CartController extends Controller
     }
 
     public function remove_all_cart_items() {
-        $account_id = 1;
+        $account_id = auth()->user()->id;
 
         $deleted_items = DB::delete(DB::raw("DELETE FROM cart WHERE account_id = $account_id"));
         if($deleted_items > 0) {
@@ -32,7 +35,7 @@ class CartController extends Controller
 
     function add_cart_item($cart_item)
     {
-        $account_id = 1;
+        $account_id = auth()->user()->id;
 
         $inserted_item = DB::insert(DB::raw("INSERT INTO `cart` (`account_id`, `product_id`) VALUES ($account_id, $cart_item)"));
     

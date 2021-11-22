@@ -28,7 +28,7 @@ $_SITE_TITLE = 'Module_4_Database'
                 <div class="ml-2 text-black font-semibold" id="totalPriceContainer"></div>
             </div>
             <div class="float-right flex items-center text-center">
-                <a class="cursor-pointer text-blue-200 p-2 bg-blue-500 rounded-md" href="#">Go to checkout</a>
+                <a class="cursor-pointer text-blue-200 p-2 bg-blue-500 rounded-md" href="/checkout">Go to checkout</a>
                 <a href="/remove_all_cart_items" class="cursor-pointer ml-2 p-2 bg-red-400 rounded-md">Remove All</a>
             </div>
 

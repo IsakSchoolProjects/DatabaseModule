@@ -6,12 +6,20 @@ use App\Http\Controllers\Controller;
 // use App\Models\User;
 use App\Models\Recadd;
 use App\Models\Popularity;
+use App\Models\orders;
+use App\Models\cart;
 
 use Illuminate\Support\Facades\Storage;
 use DB;
 
 class PagesController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' => ['index', 'about', 'store', 'login', 'register', 'car']]);
+    }
+
     public function index(){
 
         // RECENTLY ADDED SECTION
@@ -57,12 +65,31 @@ class PagesController extends Controller
         return view('pages.register');
     }
 
-    public function cart() {
-        return view('pages.cart');
+    // public function cart() {
+    
+    //     return view('pages.cart');
+    // }
+
+    public function checkout(){
+
+        // $user = auth()->user()->id;
+
+        // $cart = cart::all();
+
+        // $test = DB::table('cart')->select;
+
+        // SELECT * FROM `cart` WHERE `account_id` = 2
+
+
+        return view('pages.checkout');
     }
 
     public function settings(){
         return view('pages.settings');
+    }
+
+    public function profile_picture(){
+        return view('pages.profile_picture');
     }
 
     public function car($id){

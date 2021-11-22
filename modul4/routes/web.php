@@ -40,3 +40,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/settings', [PagesController::class, 'settings']);
+Route::get('/profile_picture', [PagesController::class, 'profile_picture']);
+Route::get('/checkout', [PagesController::class, 'checkout']);

@@ -5,10 +5,9 @@
             <a href="/" class="text-gray-400 hover:text-content">Home</a>
             <a href="/store/no_order" class="text-gray-400 hover:text-content">Store</a>
             <a href="/about" class="text-gray-400 hover:text-content">About</a>
-            <a href="/cart" class="text-gray-400 hover:text-content">Cart</a>
+            @if(!Auth::guest())<a href="/cart" class="text-gray-400 hover:text-content">Cart</a>@endif
         </div>
         <!-- Right -->
-        {{-- @if() --}}
         @guest
         @if(Route::has('login'))
 
@@ -18,14 +17,12 @@
                 @if(Route::has('register'))
                     <a href="/register" class="bg-blue-500 px-6 py-2 rounded-md text-blue-200 font-medium hover:bg-blue-600">Register</a>
             </div>
-            @endif
-
-        {{-- @endif --}}
-            @else
-        <div class="flex flex-row gap-6 text-md">
-            <a href="/settings" class="text-highlight py-2 my-auto hover:text-content">{{ Auth::user()->name }}</a>
-            <img class="w-16 rounded-full border border-content" src="https://i.pravatar.cc/100">
-        </div>
+        @endif
+        @else
+            <div class="flex flex-row gap-6 text-md">
+                <a href="/settings" class="text-highlight py-2 my-auto hover:text-content">{{ Auth::user()->name }}</a>
+                <img class="w-16 rounded-full border border-content" src="https://i.pravatar.cc/100">
+            </div>
 
         @endguest
     </nav>

@@ -12,6 +12,12 @@ use DB;
 
 class ProductsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth', ['except' =>['contact', 'showAllProducts']]);
+    }
+
     public function contact(Request $request){
 
         $name = $request->input('name');
@@ -73,7 +79,7 @@ class ProductsController extends Controller
     }
 
     function showCartItems() {
-        $account_id = 1;
+        $account_id = auth()->user()->id;
 
         $cart_products = DB::select(DB::raw("SELECT id, product_id FROM cart WHERE account_id = $account_id"));
 
