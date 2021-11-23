@@ -72,17 +72,26 @@ class PagesController extends Controller
     // }
 
     public function checkout(){
+        $account_id = auth()->user()->id;
 
-        // $user = auth()->user()->id;
+        $cart_items = DB::select(DB::raw("SELECT product_id FROM cart WHERE account_id = $account_id"));
 
-        // $cart = cart::all();
+        $product_ids = [];
 
-        // $test = DB::table('cart')->select;
+        // echo print_r($cart_items);
 
-        // SELECT * FROM `cart` WHERE `account_id` = 2
+        // return;
 
+        for ($i=0; $i < sizeof($cart_items); $i++) { 
+            array_push($product_ids, $cart_items[$i]->product_id);
+        }
 
-        return view('pages.checkout');
+        if(sizeof($cart_items) > 0) {
+            $inserted_items = DB::insert(DB::raw("INSERT INTO `orders` (`product_ids`, `user_id`) VALUES ('". substr(json_encode($product_ids), 1, -1) ."', $account_id)"));
+            return redirect('/remove_all_cart_items')->with('checkout', true);
+        } else {
+            return view('pages.checkout');
+        }
     }
 
     public function settings(){

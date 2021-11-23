@@ -26,6 +26,11 @@ class CartController extends Controller
         $account_id = auth()->user()->id;
 
         $deleted_items = DB::delete(DB::raw("DELETE FROM cart WHERE account_id = $account_id"));
+
+        if($deleted_items > 0 && \Session::has('checkout')) {
+            return redirect('checkout');
+        }
+
         if($deleted_items > 0) {
             return back()->with('delete_success', 'You deleted all items in your cart.');
         }else {
