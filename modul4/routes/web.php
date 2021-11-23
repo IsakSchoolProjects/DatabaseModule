@@ -33,6 +33,7 @@ Route::get('/remove_all_cart_items', [CartController::class, 'remove_all_cart_it
 Route::get('/add_cart_item/{cart_item}', [CartController::class, 'add_cart_item']);
 
 Route::get('/contact', [ProductsController::class, 'contact']);
+Route::get('/profile', [ProductsController::class, 'profile']);
 Route::get('/car/{id}', [PagesController::class, 'car']);
 
 Auth::routes();
@@ -42,3 +43,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/settings', [PagesController::class, 'settings']);
 Route::get('/profile_picture', [PagesController::class, 'profile_picture']);
 Route::get('/checkout', [PagesController::class, 'checkout']);
+Route::post('/upload', [PagesController::class, 'upload']);

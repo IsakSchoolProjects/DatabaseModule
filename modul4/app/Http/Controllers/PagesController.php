@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\Request;
 
 use App\Http\Controllers\Controller;
 // use App\Models\User;
@@ -88,8 +89,51 @@ class PagesController extends Controller
         return view('pages.settings');
     }
 
+    public function empty(){
+        return view('pages.empty');
+    }
+
     public function profile_picture(){
         return view('pages.profile_picture');
+    }
+
+    public function upload(Request $request){
+        $account_id = auth()->user()->id;
+
+        $profile_image = auth()->user()->profile;
+
+        // return $request->input('profile');
+        
+        $this->validate($request, [
+            'profile' => 'image|nullable|max:1999'
+        ]);
+
+        if($request->hasFile('profile')){
+            
+            // Get filename with the extension
+            $filenameWithExt = $request->file('profile')->getClientOriginalName();
+            
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+            // Get just ext
+            $extension = $request->file('profile')->getClientOriginalExtension();
+
+            // Filename to store
+            $filenameToStore = $filename.'_'.time().'.'.$extension;
+
+            // Upload image
+            $path = $request->file('profile')->storeAs('public/profile_images', $filenameToStore);
+        }
+        else{
+            $filenameToStore = 'noImage.png';
+        }
+
+        // $test = DB::update('UPDATE users SET `profile` = 100 WHERE id = 2');
+
+        DB::update('update users set profile = ? where id = ?', [$filenameToStore, $account_id]);
+
+        return redirect('/settings');
     }
 
     public function car($id){
