@@ -106,41 +106,48 @@ class PagesController extends Controller
         return view('pages.profile_picture');
     }
 
+    // php artisan storage:link
+
     public function upload(Request $request){
+        // Upload image from local - Not working on everyones computers
+        
+        // $this->validate($request, [
+        //     'profile' => 'image|nullable|max:1999'
+        // ]);
+
+        // if($request->hasFile('profile')){
+            
+        //     // Get filename with the extension
+        //     $filenameWithExt = $request->file('profile')->getClientOriginalName();
+            
+        //     // Get just filename
+        //     $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+        //     // Get just ext
+        //     $extension = $request->file('profile')->getClientOriginalExtension();
+
+        //     // Filename to store
+        //     $filenameToStore = $filename.'_'.time().'.'.$extension;
+
+        //     // Upload image
+        //     $path = $request->file('profile')->storeAs('public/profile_images', $filenameToStore);
+        // }
+        // else{
+        //     $filenameToStore = 'noImage.png';
+        // }
+
         $account_id = auth()->user()->id;
 
         $profile_image = auth()->user()->profile;
 
-        // return $request->input('profile');
-        
-        $this->validate($request, [
-            'profile' => 'image|nullable|max:1999'
-        ]);
-
-        if($request->hasFile('profile')){
-            
-            // Get filename with the extension
-            $filenameWithExt = $request->file('profile')->getClientOriginalName();
-            
-            // Get just filename
-            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-
-            // Get just ext
-            $extension = $request->file('profile')->getClientOriginalExtension();
-
-            // Filename to store
-            $filenameToStore = $filename.'_'.time().'.'.$extension;
-
-            // Upload image
-            $path = $request->file('profile')->storeAs('public/profile_images', $filenameToStore);
-        }
-        else{
-            $filenameToStore = 'noImage.png';
-        }
-
-        // $test = DB::update('UPDATE users SET `profile` = 100 WHERE id = 2');
+        $filenameToStore = $request->input('url');
 
         DB::update('update users set profile = ? where id = ?', [$filenameToStore, $account_id]);
+
+        if($profile_image == ''){
+            $noImage = '¨/storage/profile_images/noImage.png';
+            DB::update('update users set profile = ? where id = ?', [$noImage, $account_id]);
+        }
 
         return redirect('/settings');
     }

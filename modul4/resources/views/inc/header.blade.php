@@ -21,7 +21,9 @@
         @else
             <div class="flex flex-row gap-6 text-md">
                 <a href="/settings" class="text-highlight py-2 my-auto hover:text-content">{{ Auth::user()->name }}</a>
-                <img class="w-16 rounded-full border border-content" src="/storage/profile_images/{{ Auth::user()->profile }}">
+                {{-- Not working on everyones computer --}}
+                {{-- <img class="w-16 rounded-full border border-content" src="/storage/profile_images/{{ Auth::user()->profile }}"> --}}
+                <img class="w-16 rounded-full border border-content" src="{{ Auth::user()->profile }}">
             </div>
 
         @endguest
